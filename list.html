@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Contact Form</title>
+    <title>List</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -10,6 +10,25 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+<script>
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBB54z87FOm35FWQXJ-leaXF1kp_nhlzyw",
+  authDomain: "devatproject.firebaseapp.com",
+  databaseURL: "https://devatproject-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "devatproject",
+  storageBucket: "devatproject.appspot.com",
+  messagingSenderId: "278222399706",
+  appId: "1:278222399706:web:c73136d595a112fd421de3",
+  measurementId: "G-L2YGQ4TSZ6"
+};
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
     <script type="text/javascript">
         (function() {
             // https://dashboard.emailjs.com/admin/integration
@@ -31,16 +50,197 @@
                     });
             });
         }
+
+        function thankyou() {
+            document.getElementById("contact-form").style.display = "none";
+            document.getElementById("thanktext").innerHTML = "Thank you! We appreciate every participation in thes project.";
+
+        }
     </script>
     <style>
         body {
             background-color: black;
         }
+        .blacklink {
+    text-decoration: none;
+    color: black;
+  }
+  .blacklink:hover {
+    color: black;
+    text-decoration: underline;
+  }
     </style>
 </head>
 <body>
+    
+    <div class="container py-5">
+        <div class="row">
+          <div class="col col-md-3">
+            
+          </div>
+          <div style="background-color: #adb5bd;" class="col col-md-6 shadow-none p-3 mb-5 bg-light rounded py-5">
+            <a href="index.html">[Back]</a>
+            <ul class="nav nav-pills my-5 mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">General Tools</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Generator</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Converter</a>
+                </li>
+              </ul>
+              <div class="tab-content my-5" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <ul>
+                        <li><a class="blacklink" href="tool-info.html?id=wocl-tool">World Clock <span class="badge bg-secondary">In Work</span></a></li>
+                        <li><a class="blacklink" href="tool-info.html?id=stwa-tool">Stopwatch</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=timr-tool">Timer</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=almr-tool">Alarm</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=woco-tool">Word Count</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=imre-tool">Image Resize</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=imcr-tool">Image Crop</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=imro-tool">Image Rotate</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=imbr-tool">Image Background Remove</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=imop-tool">Image Opacity</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=imbw-tool">Image Black-White</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=fiwm-tool">File Watermark</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=fipv-tool">File Preview</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=epdf-tool">Edit PDF</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=uafi-tool">Unarchive File</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=cofi-tool">Compress File</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=bqsc-tool">Barcode Scanner</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=qrsc-tool">QR-Code Scanner</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=nwst-tool">Network Speedtest</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=ipan-tool">IP Analysis</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=calc-tool">Calculator</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=crav-tool">Crop Audio/Video Files</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=rvav-tool">Reverse Audio/Video Files</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=splf-tool">Split PDF</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=mrgf-tool">Merge PDF</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=dltf-tool">Delete PDF pages</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=rotf-tool">Rotate PDF</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=sgnf-tool">Sign PDF</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=ptcf-tool">Protect PDF</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=sign-tool">Sign</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a style="color: rgb(156, 156, 156); text-decoration: none;">File Transfer (Coming Soon)</a></li>
+                        <li><a style="color: rgb(156, 156, 156); text-decoration: none;">Programming Text Editor/Formatter (Coming Soon)</a></li>
+                      </ul>
+                      <div class="shadow p-3 mb-5 bg-white rounded">
+                        <form id="contact-form">
+                            <input type="hidden" name="contact_number">
+                            <input type="hidden" value="Suggestion on General Tools" name="user_name">
+                            <div class="mb-3">
+                                <label class="form-label">Add your idea</label>
+                                <input type="text" name="message" class="form-control">
+                              </div>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Email address</label>
+                              <input type="email" name="user_email" class="form-control" aria-describedby="emailHelp">
+                              <div id="emailHelp" class="form-text">Just if you want to be credited.</div>
+                            </div>
+                            <button type="submit" value="Send" class="btn btn-primary" onclick="thankyou()">Submit</button>
+                          </form>
+                          <p id="thanktext"> Test</p>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <ul>
+                        <li><a class="blacklink" href="tool-info.html?id=loip-genr">Lorem Ipsum Generator</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=peda-genr">Fake/Dummy Personal Data Generator</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=name-genr">Name Genrator</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=ranu-genr">Random Number Generator</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=flco-genr">Flip a Coin Generator</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=baco-genr">Barcode Generator</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=qrco-genr">QR-Code Generator</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=colr-genr">Color Generator</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=rame-genr">Random Meme Generator <span class="badge bg-secondary">In Work</span></a></li>
+                        <li><a class="blacklink" href="tool-info.html?id=raim-genr">Random Image Generator</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=hash-genr">Hash Generator</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=pswd-genr">Password Generator</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a class="blacklink" href="tool-info.html?id=guid-genr">GUID Generator</a> <span class="badge bg-secondary">linked</span></li>
+                        <li><a style="color: rgb(156, 156, 156); text-decoration: none;">Favicon Generator (Coming Soon)</a></li>
+                        <li><a style="color: rgb(156, 156, 156); text-decoration: none;">Calender Generator (Coming Soon)</a></li>
+                        <li><a style="color: rgb(156, 156, 156); text-decoration: none;">Timetable Generator (Coming Soon)</a></li>
+                        <li><a style="color: rgb(156, 156, 156); text-decoration: none;">Crossword Puzzle Generator (Coming Soon)</a></li>
+                        <li><a style="color: rgb(156, 156, 156); text-decoration: none;">Diagram Generator (Coming Soon)</a></li>
+                        <li><a style="color: rgb(156, 156, 156); text-decoration: none;">BitAdress Generator (Coming Soon)</a></li>
+                      </ul>
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <p style="font-weight: bold;">Converter (Files)</p>
+                  <ul>
+                    <li><a class="blacklink" href="tool-info.html?id=wocl-conv">Convert to .mp3</a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .mp4 </a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .aac</a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .aiff</a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .flac</a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .m4a</a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .m4r</a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .mmf</a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .mp3</a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .wav</a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .wma</a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .doc</a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .docx</a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .html</a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .odt</a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .pdf</a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .ppt</a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .pptx</a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .rtf</a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .txt</a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .xlsx</a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .csv</a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .3g2 </a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .3gp</a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .avi</a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .flv</a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .mkv</a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .mov</a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .mp4 </a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .mpg</a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .ogv</a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .webm</a> <span class="badge bg-secondary">linked</span></li>
+                    <li><a class="blacklink" href="tool-info.html?id=sign-conv">Convert to .wmv</a> <span class="badge bg-secondary">linked</span></li>
+                  </ul>
+                </li>
+                <li style="margin-top: 2rem;">
+                  <p style="font-weight: bold;">Converter (Time)</p>
+                  <ul>
+                    <li><a class="blacklink" href="tool-info.html?id=mp3-conv">Convert to Eastern Standard Time (EST)</a> <span class="badge bg-secondary">linked</span></li>
+                  </ul>
+                </li>
+                <li style="margin-top: 2rem;">
+                  <p style="font-weight: bold;">Converter (Physical units)</p>
+                  <ul>
+                    <li><a class="blacklink" href="tool-info.html?id=mp3-conv">Convert Centimeter to Millimeter</a> <span class="badge bg-secondary">linked</span></li>
+                  </ul>
+                </li>
+                <li style="margin-top: 2rem;">
+                  <p style="font-weight: bold;">Converter (Currency</p>
+                  <ul>
+                    <li><a class="blacklink" href="tool-info.html?id=mp3-conv">Convert US-Dollar to Euro</a> <span class="badge bg-secondary">linked</span></li>
+                  </ul>
+                </div>
+              </div>
+            
+          </div>
+          <div class="col col-md-3">
+            
+          </div>
+        </div>
+      </div>
 
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.2.1/firebase-app.js"></script>
 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.2.1/firebase-analytics.js"></script>
 
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
 </body>
 </html>
