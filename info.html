@@ -170,6 +170,31 @@ body {
           <a href="javascript:history.back()">[Go Back]</a>
         </div>
       </main>
+      <script>
+
+        // Speichern der URL Parameter in der Konstane "params"
+        const params = new URLSearchParams(window.location.search);
+        // Überprüfen ob die URL Parameter einen "def" Parameter beinhalten
+        if (params.has("id") == true) {
+            // Wenn enthält:
+            // Speicherung des Wertes des "def" Parameters in der "def" Variabel
+            id = params.get("id");
+            
+            
+            
+        } else {
+        }
+        let requestURL = '';
+        let request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        request.responseType = 'json';
+        request.send();
+        request.onload = function() {
+        const superHeroes = request.response;
+        var sd = superHeroes['loip-genr']['powers']
+        alert(sd);
+        }
+      </script>
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="/__/firebase/8.2.1/firebase-app.js"></script>
