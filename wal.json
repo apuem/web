@@ -6,7 +6,11 @@
         "name": "loremipsum",
         "short": "loip-genr",
         "status": "third-party-linked",
-        "details": "example glossary",
+        "details": [
+            "Radiation resistance",
+            "Turning tiny",
+            "Radiation blast"
+          ],
         "suggestedby": "example glossary",
         "createdby": "example glossary",
         "url": "https://loremipsum.de/index_en.html",

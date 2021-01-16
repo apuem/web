@@ -136,34 +136,36 @@ body {
       </div>
       <main class="container">
         <div class="bg-light p-5 rounded mt-3">
-          <h1>Lorem Ipsum Generator</h1>
+          <h1 id="title"></h1>
           <hr>
           <dl class="row">
             <dt class="col-sm-3">Description</dt>
-            <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+            <dd class="col-sm-9" id="description">A description list is perfect for defining terms.</dd>
           
             <dt class="col-sm-3">Short</dt>
-            <dd class="col-sm-9">Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+            <dd class="col-sm-9" id="short">Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
           
             <dt class="col-sm-3">Status</dt>
-            <dd class="col-sm-9"><span class="badge bg-secondary">linked</span></dd>
+            <dd class="col-sm-9"><span class="badge bg-secondary" id="status">linked</span></dd>
           
             <dt class="col-sm-3 text-truncate">Details</dt>
             <dd class="col-sm-9">
               <ul>
-                <li>All File Types</li>
-                <li>Drag and Drop</li>
+                <li id="details1"></li>
+                <li id="details2"></li>
+                <li id="details3"></li>
+                <li id="details4"></li>
               </ul>
             </dd>
           
             <dt class="col-sm-3">Suggested by</dt>
-            <dd class="col-sm-9">Test</dd>
+            <dd class="col-sm-9" id="suggestedby"></dd>
 
             <dt class="col-sm-3">Created by</dt>
-            <dd class="col-sm-9">Test</dd>
+            <dd class="col-sm-9" id="createdby"></dd>
 
             <dt class="col-sm-3">URL</dt>
-            <dd onclick="linktopage()" class="col-sm-9 text-muted">https://apuem.github.io/loremipsum</dd>
+            <dd class="col-sm-9 link"><a id="url" class="link-secondary" href=""></a></dd>
           </dl>
           
           <p>Want to develop it? <a href="/contact">Contact us</a></p>
@@ -179,21 +181,49 @@ body {
             // Wenn enthält:
             // Speicherung des Wertes des "def" Parameters in der "def" Variabel
             id = params.get("id");
+            let requestURL = 'https://apuem.github.io/wal.json';
+            let request = new XMLHttpRequest();
+            request.open('GET', requestURL);
+            request.responseType = 'json';
+            request.send();
+            request.onload = function() {
+            const data = request.response;
+            var title = data[id][0]['title']
+            var short = data[id][0]['short']
+            var status = data[id][0]['status']
+            var details1 = data[id][0]['details'][0]
+            var details2 = data[id][0]['details'][1]
+            var details3 = data[id][0]['details'][2]
+            var details4 = data[id][0]['details'][3]
+            var suggestedby = data[id][0]['suggestedby']
+            var createdby = data[id][0]['createdby']
+            var url = data[id][0]['url']
+
+            document.getElementById("title").innerHTML = title;
+            document.getElementById("short").innerHTML = short;
+            document.getElementById("status").innerHTML = status;
+            document.getElementById("details1").innerHTML = details1;
+            document.getElementById("details2").innerHTML = details2;
+            document.getElementById("details3").innerHTML = details3;
+            document.getElementById("details4").innerHTML = details4;
+            document.getElementById("suggestedby").innerHTML = suggestedby;
+            document.getElementById("createdby").innerHTML = createdby;
+            document.getElementById("url").innerHTML = url;
+            document.getElementById("url").setAttribute('href', url);
+
+
+            function linktourl() {
+            window.location = (url);
+            }
             
+            }
             
             
         } else {
         }
-        let requestURL = '';
-        let request = new XMLHttpRequest();
-        request.open('GET', requestURL);
-        request.responseType = 'json';
-        request.send();
-        request.onload = function() {
-        const superHeroes = request.response;
-        var sd = superHeroes['loip-genr']['powers']
-        alert(sd);
-        }
+
+        
+
       </script>
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
