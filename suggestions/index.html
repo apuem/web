@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     
 <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
 <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
@@ -141,7 +142,7 @@ body {
                 <input type="hidden" value="Suggestion on General Tools" name="user_name">
                 <div class="mb-3">
                     <h6 class="form-label">Add your idea</h6>
-                    <input type="text" name="message" class="form-control">
+                    <input type="text" name="message" class="form-control" required>
                   </div>
                 <div class="mb-3">
                   <h6 for="exampleInputEmail1" class="form-label">Email address</h6>
@@ -155,9 +156,57 @@ body {
         <div class="bg-light p-5 rounded mt-3">
             <h1>Chess Game</h1>
             <p class="lead"><strong>by Selvan Morbori.</strong> Do you know the best "Chess Game" web app or do you want to develop it and earn from ad revenue? </p>
-            <a class="btn btn-lg btn-primary" href="/contact" role="button">Contact us</a>
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+              <button type="button" onclick="location.href='../developer';" class="btn btn-outline-primary">Develop it</button>
+              <button type="button" data-bs-toggle="modal" data-bs-target="#intModal" class="btn btn-outline-primary">Suggest a webapp</button>
+            
+              <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Suggest a webapp (national)
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <li><a class="dropdown-item" href="chinese-version.html">Add chinese version (zh)</a></li>
+                  <li><a class="dropdown-item" href="dutch-version.html">Add dutch version (nl)</a></li>
+                  <li><a class="dropdown-item" href="french-version.html">Add french version (fr)</a></li>
+                  <li><a class="dropdown-item" href="german-version.html">Add german version (de)</a></li>
+                  <li><a class="dropdown-item" href="italian-version.html">Add italian version (it)</a></li>
+                  <li><a class="dropdown-item" href="spanish-version.html">Add spanish version (es)</a></li>
+                  <li><a class="dropdown-item" href="japanese-version.html">Add japanese version (ja)</a></li>
+                  <li><a class="dropdown-item" href="portuguese-version.html">Add portuguese version (pt)</a></li>
+                  <li><a class="dropdown-item" href="polish-version.html">Add polish version (pl)</a></li>
+                  <li><a class="dropdown-item" href="russian-version.html">Add russian version (ru)</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
+
+<!-- Modal -->
+<div class="modal fade" id="intModal" tabindex="-1" aria-labelledby="intModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="intModalLabel">Suggest a webapp</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdG5bjuBxm5JlYwO18bK884w8lQqi3nsv2HN_e9ypmAvqN7cQ/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" class="position-absolute top-50 start-50 translate-middle" marginwidth="0">Loading…</iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
       </main>
+      <script>
+        function thankyou() {
+
+          document.getElementById("contact-form").style.display = "none";
+          document.getElementById("thanktext").innerHTML = "Thank you!";
+
+        }
+    </script>
+
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="/__/firebase/8.2.1/firebase-app.js"></script>

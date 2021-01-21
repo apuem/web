@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sending Mail</title>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script type="text/javascript">
+function sendEmail() {
+Email.send({
+SecureToken : "50458475-dd18-4fba-84dc-101abf73e39e",
+To : 'jona.kaufmann@hotmail.com',
+From : "support.apuem@protonmail.com",
+Subject: "Sending Email using javascript with SMTPJS",
+Body: "...",
+})
+.then(function (message) {
+alert("Mail has been sent successfully")
+});
+}
+</script>
+</head>
+<body>
+<form method="post">
+<input type="button" value="Send Mail"onclick="sendEmail()"/>
+</form>
+</body>
+</html>
