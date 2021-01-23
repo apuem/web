@@ -1,7 +1,33 @@
-{
-    "loip-genr": [
+[
         
     {
+        "id": "1",
+        "title": "Lorem Ispum Generator",
+        "name": "loremipsum",
+        "short": "loip-genr",
+        "status": "third-party-linked",
+        "details": [
+            "Radiation resistance",
+            "Turning tiny",
+            "Radiation blast"
+          ],
+        "suggestedby": "example glossary",
+        "createdby": "example glossary",
+        "url": "<a target='_blank' href='https://apuem.com/loremipsum'>https://loremipsum.de/index_en.html</a>",
+        "url-zh": "example glossary",
+        "url-nl": "example glossary",
+        "url-fr": "example glossary",
+        "url-de": "example glossary",
+        "url-it": "example glossary",
+        "url-es": "example glossary",
+        "url-ja": "example glossary",
+        "url-pt": "example glossary",
+        "url-pl": "example glossary",
+        "url-ru": "example glossary",
+        "addi": "null"
+    },
+    {
+        "id": "2",
         "title": "Lorem Ispum Generator",
         "name": "loremipsum",
         "short": "loip-genr",
@@ -27,4 +53,4 @@
         "addi": "null"
     }
     ]
-}
+
