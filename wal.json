@@ -1,7 +1,7 @@
 [
         
     {
-        "id": "1",
+        "id": "0",
         "title": "Lorem Ispum Generator",
         "name": "loremipsum",
         "short": "loip-genr",
@@ -15,6 +15,7 @@
         "suggestedby": "example glossary",
         "createdby": "example glossary",
         "url": "<a target='_blank' href='https://apuem.com/loremipsum'>https://loremipsum.de/index_en.html</a>",
+        "rawurl": "loremipsum.de/index_en.html",
         "url-zh": "example glossary",
         "url-nl": "example glossary",
         "url-fr": "example glossary",
@@ -25,7 +26,7 @@
         "url-pt": "example glossary",
         "url-pl": "example glossary",
         "url-ru": "example glossary",
-        "datasec-p": "0",
+        "datasecp": "0",
         "design-p": "0"
     },
     {

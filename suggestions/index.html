@@ -12,6 +12,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZEPRDVXYRZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-ZEPRDVXYRZ');
+    </script>
     
 <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
 <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
@@ -159,11 +169,11 @@ body {
             <p class="lead"><strong>by Selvan Morbori.</strong> Do you know the best "Chess Game" web app or do you want to develop it and earn from ad revenue? </p>
             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
               <!--<button type="button" onclick="location.href='../developer';" class="btn btn-outline-primary">Develop it</button>-->
-              <button type="button" data-bs-toggle="modal" data-bs-target="#intModal" class="btn btn-outline-primary">Suggest a webapp</button>
+              <button type="button" data-bs-toggle="modal" data-bs-target="#intModal" class="btn btn-outline-primary">Suggest</button>
             
               <div class="btn-group" role="group">
                 <button id="btnGroupDrop1" type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                  Suggest a webapp (national)
+                  Suggest (national)
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
                   <li><a class="dropdown-item" href="chinese-version.html">Add chinese version (zh)</a></li>
