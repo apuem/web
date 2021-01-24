@@ -12,6 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
 
+    <meta name="yandex-verification" content="1a2320211a9fc605" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZEPRDVXYRZ"></script>
     <script>
@@ -131,7 +135,7 @@ body {
     </style>
 </head>
 <body>
- 
+
     <div class="nav-scroller bg-white shadow-sm">
         <nav class="nav nav-underline" aria-label="Secondary navigation">
           <a class="nav-link active" aria-current="page" style="color: black; font-family: 'Poppins', sans-serif;" href="/"><strong>apuem</strong></a>
@@ -145,6 +149,16 @@ body {
         </nav>
       </div>
       <main class="container">
+
+        <h1 class="mt-5 animate__animated animate__fadeIn">A unified collection of web apps.</h1>
+        <div class="p-5 border rounded mt-3 animate__animated animate__fadeIn">
+          <h1 class="display-4"> We search for the best web apps on the web and register them.</h1>
+          <div class="btn-group mt-5" role="group" aria-label="Basic outlined example">
+            <button type="button" onclick="location.href='/howitworks';" class="btn btn-outline-secondary">Learn more</button>
+            <button type="button" onclick="location.href='/all';" class="btn btn-outline-secondary">See all</button>
+            <button type="button" onclick="location.href='/suggestions';" class="btn btn-outline-secondary">Suggest one</button>
+          </div>
+        </div>
         
         <div class="bg-light p-4 mb-4 rounded mt-3">
           <ul class="nav nav-pills nav-fill">
@@ -152,14 +166,14 @@ body {
               <a class="nav-link active" aria-current="page" href="/">Explore</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/other">All General</a>
+              <a class="nav-link" href="/all">All</a>
             </li>
             <!--<li class="nav-item">
               <a class="nav-link" href="/generators">All Generators</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/converters">All Converters</a>
-            </li>-->
+            </li>-->  
           </ul>
       </div>
 
