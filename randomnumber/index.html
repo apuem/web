@@ -17,10 +17,10 @@ $.ajax({
 }).done(function(result){
     console.log(result);
     var selected = result.filter(function(item) {
-                return item.id == 1;
+                return item.id == 0;
               });
 
-              alert(selected[0].rawurl);
+              
               window.location.href = selected[0].rawurl;
               
 });
