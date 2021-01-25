@@ -1,254 +1,267 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>all</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+    <head>
+        <title>Complete list - apuem</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Part of the apuem collection" />
+        <meta name="keywords" content="webapp, web, app, all, list, apuem" />
+        <meta name="author" content="apuem" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.18.1/dist/bootstrap-table.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.18.1/dist/bootstrap-table.min.css" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZEPRDVXYRZ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
 
-      gtag('config', 'G-ZEPRDVXYRZ');
-    </script>
-    
-<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
-<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
-<script>
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyBB54z87FOm35FWQXJ-leaXF1kp_nhlzyw",
-  authDomain: "devatproject.firebaseapp.com",
-  databaseURL: "https://devatproject-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "devatproject",
-  storageBucket: "devatproject.appspot.com",
-  messagingSenderId: "278222399706",
-  appId: "1:278222399706:web:c73136d595a112fd421de3",
-  measurementId: "G-L2YGQ4TSZ6"
-};
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/integration
-            emailjs.init('user_OeMey1QdIZcVl8dewdJDA');
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('service_u0jwsic', 'template_lvps758', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
-    <style>
-        html,
-body {
-  overflow-x: hidden; /* Prevent scroll on narrow devices */
-}
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZEPRDVXYRZ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
+            gtag("config", "G-ZEPRDVXYRZ");
+        </script>
 
+        <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+        <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+        <script>
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+                apiKey: "AIzaSyBB54z87FOm35FWQXJ-leaXF1kp_nhlzyw",
+                authDomain: "devatproject.firebaseapp.com",
+                databaseURL: "https://devatproject-default-rtdb.europe-west1.firebasedatabase.app",
+                projectId: "devatproject",
+                storageBucket: "devatproject.appspot.com",
+                messagingSenderId: "278222399706",
+                appId: "1:278222399706:web:c73136d595a112fd421de3",
+                measurementId: "G-L2YGQ4TSZ6",
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
+        <script type="text/javascript">
+            (function () {
+                // https://dashboard.emailjs.com/admin/integration
+                emailjs.init("user_OeMey1QdIZcVl8dewdJDA");
+            })();
+        </script>
+        <script type="text/javascript">
+            window.onload = function () {
+                document.getElementById("contact-form").addEventListener("submit", function (event) {
+                    event.preventDefault();
+                    // generate a five digit number for the contact_number variable
+                    this.contact_number.value = (Math.random() * 100000) | 0;
+                    // these IDs from the previous steps
+                    emailjs.sendForm("service_u0jwsic", "template_lvps758", this).then(
+                        function () {
+                            console.log("SUCCESS!");
+                        },
+                        function (error) {
+                            console.log("FAILED...", error);
+                        }
+                    );
+                });
+            };
+        </script>
+        <style>
+            html,
+            body {
+                overflow-x: hidden; /* Prevent scroll on narrow devices */
+            }
 
-@media (max-width: 991.98px) {
-  .offcanvas-collapse {
-    position: fixed;
-    top: 56px; /* Height of navbar */
-    bottom: 0;
-    left: 100%;
-    width: 100%;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    overflow-y: auto;
-    visibility: hidden;
-    background-color: #343a40;
-    transition: transform .3s ease-in-out, visibility .3s ease-in-out;
-  }
-  .offcanvas-collapse.open {
-    visibility: visible;
-    transform: translateX(-100%);
-  }
-}
+            @media (max-width: 991.98px) {
+                .offcanvas-collapse {
+                    position: fixed;
+                    top: 56px; /* Height of navbar */
+                    bottom: 0;
+                    left: 100%;
+                    width: 100%;
+                    padding-right: 1rem;
+                    padding-left: 1rem;
+                    overflow-y: auto;
+                    visibility: hidden;
+                    background-color: #343a40;
+                    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+                }
+                .offcanvas-collapse.open {
+                    visibility: visible;
+                    transform: translateX(-100%);
+                }
+            }
 
-.nav-scroller {
-  position: relative;
-  z-index: 2;
-  height: 2.75rem;
-  overflow-y: hidden;
-}
+            .nav-scroller {
+                position: relative;
+                z-index: 2;
+                height: 2.75rem;
+                overflow-y: hidden;
+            }
 
-.nav-scroller .nav {
-  display: flex;
-  flex-wrap: nowrap;
-  padding-bottom: 1rem;
-  margin-top: -1px;
-  overflow-x: auto;
-  color: rgba(255, 255, 255, .75);
-  text-align: center;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-}
+            .nav-scroller .nav {
+                display: flex;
+                flex-wrap: nowrap;
+                padding-bottom: 1rem;
+                margin-top: -1px;
+                overflow-x: auto;
+                color: rgba(255, 255, 255, 0.75);
+                text-align: center;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
 
-.nav-underline .nav-link {
-  padding-top: .75rem;
-  padding-bottom: .75rem;
-  font-size: .875rem;
-  color: #6c757d;
-}
+            .nav-underline .nav-link {
+                padding-top: 0.75rem;
+                padding-bottom: 0.75rem;
+                font-size: 0.875rem;
+                color: #6c757d;
+            }
 
-.nav-underline .nav-link:hover {
-  color: #007bff;
-}
+            .nav-underline .nav-link:hover {
+                color: #007bff;
+            }
 
-.nav-underline .active {
-  font-weight: 500;
-  color: #343a40;
-}
+            .nav-underline .active {
+                font-weight: 500;
+                color: #343a40;
+            }
 
-.text-white-50 { color: rgba(255, 255, 255, .5); }
+            .text-white-50 {
+                color: rgba(255, 255, 255, 0.5);
+            }
 
-.bg-purple { background-color: #6f42c1; }
-    </style>
-</head>
-<body>
- 
-    <div class="nav-scroller bg-white shadow-sm">
-        <nav class="nav nav-underline" aria-label="Secondary navigation">
-          <a class="nav-link active" aria-current="page" style="color: black; font-family: 'Poppins', sans-serif;" href="/"><strong>apuem</strong></a>
-          <a class="nav-link" href="/suggestions">
-            Add Your Idea
-            <span class="badge bg-light text-dark rounded-pill align-text-bottom">7</span>
-          </a>
-          <a class="nav-link" href="/howitworks">How it works</a>
-          <!-- <a class="nav-link" href="#">Developer</a> -->
-          <a class="nav-link" href="/contact">Contact</a>
-        </nav>
-      </div>
-      <main class="container">
-        
-        <div class="bg-light p-4 mb-4 rounded mt-3">
-          <ul class="nav nav-pills nav-fill">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="../index.html">Explore</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">All</a>
-            </li>
-            <!--<li class="nav-item">
+            .bg-purple {
+                background-color: #6f42c1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav-scroller bg-white shadow-sm">
+            <nav class="nav nav-underline" aria-label="Secondary navigation">
+                <a class="nav-link active" aria-current="page" style="color: black; font-family: 'Poppins', sans-serif;" href="/"><strong>apuem</strong></a>
+                <a class="nav-link" href="/suggestions">
+                    Add Your Idea
+                    <span class="badge bg-light text-dark rounded-pill align-text-bottom">7</span>
+                </a>
+                <a class="nav-link" href="/howitworks">How it works</a>
+                <!-- <a class="nav-link" href="#">Developer</a> -->
+                <a class="nav-link" href="/contact">Contact</a>
+            </nav>
+        </div>
+        <main class="container">
+            <div class="bg-light p-4 mb-4 rounded mt-3">
+                <ul class="nav nav-pills nav-fill">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">All</a>
+                    </li>
+                    <!--<li class="nav-item">
               <a class="nav-link" href="/generators">All Generators</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/converters">All Converters</a>
-            </li>-->  
-          </ul>
-      </div>
-      <div class="my-3 p-3 bg-light rounded border border-dark border-5">
-        <p class="text-muted">This is the list of all registered web apps. If you know better web apps, you can suggest another link. To see all nominees, please visit <a href="../database">Database</a>. </p>
-        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-          <!--<button type="button" onclick="location.href='../developer';" class="btn btn-outline-primary">Develop it</button>-->
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn btn-outline-primary">Suggest another</button>
-        
-          <div class="btn-group" role="group">
-            <button id="btnGroupDrop1" type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              Suggest another (national)
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-              <li><a class="dropdown-item" href="../suggestions/chinese-version.html">Add chinese version (zh)</a></li>
-              <li><a class="dropdown-item" href="../suggestions/dutch-version.html">Add dutch version (nl)</a></li>
-              <li><a class="dropdown-item" href="../suggestions/french-version.html">Add french version (fr)</a></li>
-              <li><a class="dropdown-item" href="../suggestions/german-version.html">Add german version (de)</a></li>
-              <li><a class="dropdown-item" href="../suggestions/italian-version.html">Add italian version (it)</a></li>
-              <li><a class="dropdown-item" href="../suggestions/spanish-version.html">Add spanish version (es)</a></li>
-              <li><a class="dropdown-item" href="../suggestions/japanese-version.html">Add japanese version (ja)</a></li>
-              <li><a class="dropdown-item" href="../suggestions/portuguese-version.html">Add portuguese version (pt)</a></li>
-              <li><a class="dropdown-item" href="../suggestions/polish-version.html">Add polish version (pl)</a></li>
-              <li><a class="dropdown-item" href="../suggestions/russian-version.html">Add russian version (ru)</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <table style="width: 100%;"
-            id="table"
-            data-toggle="table"
-            data-height="460"
-            data-detail-view="true"
-            data-detail-formatter="detailFormatter"
-            data-url="../wal.json"
-            data-search="true">
-            
-            
-            <thead>
-              <tr>
-                <th data-field="title">Name</th>
-                <th data-field="type">Type</th>
-                <th data-field="url">URL (International)</th>
-              </tr>
-            </thead>
-          </table>
-          <script>
-            function detailFormatter(index, row) {
-              var html = []
-              $.each(row, function (key, value) {
-                html.push('<p><b>' + key + ':</b> ' + value + '</p>')
-              })
-              return html.join('')
-            }
-          </script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-          <script src="https://unpkg.com/bootstrap-table@1.18.1/dist/bootstrap-table.min.js"></script>
-      <!-- Modal -->
-    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
-      <div style="max-width:100% !important; transform: none !important; margin: 0rem !important; position: relative !important; width: auto !important; pointer-events: none;" class="modal-dialog modal-fullscreen">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="intModalLabel">Suggest a webapp</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdG5bjuBxm5JlYwO18bK884w8lQqi3nsv2HN_e9ypmAvqN7cQ/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" class="position-absolute top-50 start-50 translate-middle" marginwidth="0">Loading…</iframe>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-      </main>
+            </li>-->
+                </ul>
+            </div>
+            <div class="my-3 p-3 bg-light rounded border border-dark border-5">
+                <p class="text-muted">This is the list of all registered web apps. If you know better web apps, you can suggest another link. To see all nominees, please visit <a href="../database">Database</a>.</p>
+                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                    <!--<button type="button" onclick="location.href='../developer';" class="btn btn-outline-primary">Develop it</button>-->
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn btn-outline-primary">Suggest another</button>
 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/8.2.1/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="/__/firebase/8.2.1/firebase-analytics.js"></script>
-
-<!-- Initialize Firebase -->
-<script src="/__/firebase/init.js"></script>
-</body>
+                    <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Suggest another (national)
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <li><a class="dropdown-item" href="../suggestions/chinese-version.html">Add chinese version (zh)</a></li>
+                            <li><a class="dropdown-item" href="../suggestions/dutch-version.html">Add dutch version (nl)</a></li>
+                            <li><a class="dropdown-item" href="../suggestions/french-version.html">Add french version (fr)</a></li>
+                            <li><a class="dropdown-item" href="../suggestions/german-version.html">Add german version (de)</a></li>
+                            <li><a class="dropdown-item" href="../suggestions/italian-version.html">Add italian version (it)</a></li>
+                            <li><a class="dropdown-item" href="../suggestions/spanish-version.html">Add spanish version (es)</a></li>
+                            <li><a class="dropdown-item" href="../suggestions/japanese-version.html">Add japanese version (ja)</a></li>
+                            <li><a class="dropdown-item" href="../suggestions/portuguese-version.html">Add portuguese version (pt)</a></li>
+                            <li><a class="dropdown-item" href="../suggestions/polish-version.html">Add polish version (pl)</a></li>
+                            <li><a class="dropdown-item" href="../suggestions/russian-version.html">Add russian version (ru)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <table style="width: 100%;" id="table" data-toggle="table" data-height="460" data-detail-view="true" data-detail-formatter="detailFormatter" data-url="../wal.json" data-search="true">
+                <thead>
+                    <tr>
+                        <th data-field="title">Name</th>
+                        <th data-field="type">Type</th>
+                        <th data-field="url">URL (International)</th>
+                    </tr>
+                </thead>
+            </table>
+            <script>
+                function detailFormatter(index, row) {
+                    var html = [];
+                    $.each(row, function (key, value) {
+                        html.push("<p><b>" + key + ":</b> " + value + "</p>");
+                    });
+                    return html.join("");
+                }
+            </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <script src="https://unpkg.com/bootstrap-table@1.18.1/dist/bootstrap-table.min.js"></script>
+            <!-- Modal -->
+            <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+                <div style="max-width: 100% !important; transform: none !important; margin: 0rem !important; position: relative !important; width: auto !important; pointer-events: none;" class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="intModalLabel">Suggest a webapp</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe
+                                src="https://docs.google.com/forms/d/e/1FAIpQLSdG5bjuBxm5JlYwO18bK884w8lQqi3nsv2HN_e9ypmAvqN7cQ/viewform?embedded=true"
+                                width="640"
+                                height="500"
+                                frameborder="0"
+                                marginheight="0"
+                                class="position-absolute top-50 start-50 translate-middle"
+                                marginwidth="0"
+                            >
+                                Loading…
+                            </iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
 </html>

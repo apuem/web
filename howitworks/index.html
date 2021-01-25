@@ -1,197 +1,208 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>How it works</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+    <head>
+        <title>How it works - apuem</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Part of the apuem collection" />
+        <meta name="keywords" content="webapp, work, how, apuem" />
+        <meta name="author" content="apuem" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZEPRDVXYRZ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
 
-      gtag('config', 'G-ZEPRDVXYRZ');
-    </script>
-    
-<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
-<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
-<script>
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyBB54z87FOm35FWQXJ-leaXF1kp_nhlzyw",
-  authDomain: "devatproject.firebaseapp.com",
-  databaseURL: "https://devatproject-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "devatproject",
-  storageBucket: "devatproject.appspot.com",
-  messagingSenderId: "278222399706",
-  appId: "1:278222399706:web:c73136d595a112fd421de3",
-  measurementId: "G-L2YGQ4TSZ6"
-};
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/integration
-            emailjs.init('user_OeMey1QdIZcVl8dewdJDA');
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('service_u0jwsic', 'template_lvps758', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
-    <style>
-        html,
-body {
-  overflow-x: hidden; /* Prevent scroll on narrow devices */
-}
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZEPRDVXYRZ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
+            gtag("config", "G-ZEPRDVXYRZ");
+        </script>
 
+        <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+        <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+        <script>
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+                apiKey: "AIzaSyBB54z87FOm35FWQXJ-leaXF1kp_nhlzyw",
+                authDomain: "devatproject.firebaseapp.com",
+                databaseURL: "https://devatproject-default-rtdb.europe-west1.firebasedatabase.app",
+                projectId: "devatproject",
+                storageBucket: "devatproject.appspot.com",
+                messagingSenderId: "278222399706",
+                appId: "1:278222399706:web:c73136d595a112fd421de3",
+                measurementId: "G-L2YGQ4TSZ6",
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
+        <script type="text/javascript">
+            (function () {
+                // https://dashboard.emailjs.com/admin/integration
+                emailjs.init("user_OeMey1QdIZcVl8dewdJDA");
+            })();
+        </script>
+        <script type="text/javascript">
+            window.onload = function () {
+                document.getElementById("contact-form").addEventListener("submit", function (event) {
+                    event.preventDefault();
+                    // generate a five digit number for the contact_number variable
+                    this.contact_number.value = (Math.random() * 100000) | 0;
+                    // these IDs from the previous steps
+                    emailjs.sendForm("service_u0jwsic", "template_lvps758", this).then(
+                        function () {
+                            console.log("SUCCESS!");
+                        },
+                        function (error) {
+                            console.log("FAILED...", error);
+                        }
+                    );
+                });
+            };
+        </script>
+        <style>
+            html,
+            body {
+                overflow-x: hidden; /* Prevent scroll on narrow devices */
+            }
 
-@media (max-width: 991.98px) {
-  .offcanvas-collapse {
-    position: fixed;
-    top: 56px; /* Height of navbar */
-    bottom: 0;
-    left: 100%;
-    width: 100%;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    overflow-y: auto;
-    visibility: hidden;
-    background-color: #343a40;
-    transition: transform .3s ease-in-out, visibility .3s ease-in-out;
-  }
-  .offcanvas-collapse.open {
-    visibility: visible;
-    transform: translateX(-100%);
-  }
-}
+            @media (max-width: 991.98px) {
+                .offcanvas-collapse {
+                    position: fixed;
+                    top: 56px; /* Height of navbar */
+                    bottom: 0;
+                    left: 100%;
+                    width: 100%;
+                    padding-right: 1rem;
+                    padding-left: 1rem;
+                    overflow-y: auto;
+                    visibility: hidden;
+                    background-color: #343a40;
+                    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+                }
+                .offcanvas-collapse.open {
+                    visibility: visible;
+                    transform: translateX(-100%);
+                }
+            }
 
-.nav-scroller {
-  position: relative;
-  z-index: 2;
-  height: 2.75rem;
-  overflow-y: hidden;
-}
+            .nav-scroller {
+                position: relative;
+                z-index: 2;
+                height: 2.75rem;
+                overflow-y: hidden;
+            }
 
-.nav-scroller .nav {
-  display: flex;
-  flex-wrap: nowrap;
-  padding-bottom: 1rem;
-  margin-top: -1px;
-  overflow-x: auto;
-  color: rgba(255, 255, 255, .75);
-  text-align: center;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-}
+            .nav-scroller .nav {
+                display: flex;
+                flex-wrap: nowrap;
+                padding-bottom: 1rem;
+                margin-top: -1px;
+                overflow-x: auto;
+                color: rgba(255, 255, 255, 0.75);
+                text-align: center;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
 
-.nav-underline .nav-link {
-  padding-top: .75rem;
-  padding-bottom: .75rem;
-  font-size: .875rem;
-  color: #6c757d;
-}
+            .nav-underline .nav-link {
+                padding-top: 0.75rem;
+                padding-bottom: 0.75rem;
+                font-size: 0.875rem;
+                color: #6c757d;
+            }
 
-.nav-underline .nav-link:hover {
-  color: #007bff;
-}
+            .nav-underline .nav-link:hover {
+                color: #007bff;
+            }
 
-.nav-underline .active {
-  font-weight: 500;
-  color: #343a40;
-}
+            .nav-underline .active {
+                font-weight: 500;
+                color: #343a40;
+            }
 
-.text-white-50 { color: rgba(255, 255, 255, .5); }
+            .text-white-50 {
+                color: rgba(255, 255, 255, 0.5);
+            }
 
-.bg-purple { background-color: #6f42c1; }
-    </style>
-</head>
-<body>
- 
-    <div class="nav-scroller bg-white shadow-sm">
-        <nav class="nav nav-underline" aria-label="Secondary navigation">
-          <a class="nav-link" aria-current="page" style="color: black; font-family: 'Poppins', sans-serif;" href="/"><strong>apuem</strong></a>
-          <a class="nav-link" href="/suggestions">
-            Add Your Idea
-            <span class="badge bg-light text-dark rounded-pill align-text-bottom">7</span>
-          </a>
-          <a class="nav-link active" href="#">How it works</a>
-          <!-- <a class="nav-link" href="#">Developer</a> -->
-          <a class="nav-link" href="/contact">Contact</a>
-        </nav>
-      </div>
-      <main class="container">
-        <h1 class="mt-5 animate__animated animate__fadeInDown">How it works</h1>
-        <div class="p-5 border rounded mt-3">
-          <h1 class="display-6">Collecting the best web apps on the web and link them.</h1>
+            .bg-purple {
+                background-color: #6f42c1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav-scroller bg-white shadow-sm">
+            <nav class="nav nav-underline" aria-label="Secondary navigation">
+                <a class="nav-link" aria-current="page" style="color: black; font-family: 'Poppins', sans-serif;" href="/"><strong>apuem</strong></a>
+                <a class="nav-link" href="/suggestions">
+                    Add Your Idea
+                    <span class="badge bg-light text-dark rounded-pill align-text-bottom">7</span>
+                </a>
+                <a class="nav-link active" href="#">How it works</a>
+                <!-- <a class="nav-link" href="#">Developer</a> -->
+                <a class="nav-link" href="/contact">Contact</a>
+            </nav>
         </div>
-        <div class="p-5 border rounded mt-3">
-          
-          
-          <p>We and our community search for the best web apps for small tasks, like generators, converters, or other tools. Then we choose the best one of every kind and award this page by including them in our network. This means we link to them, and other award-winning web apps too. 
-            With this, we want to achieve that users can find a reliable web app if they look for it quickly.</p>
-        </div>
-        <div class="p-5 border rounded mt-3">
-          <h3>Our web apps</h3>
-          
-          <ul class="my-3">
-            <li>Simple</li>
-            <li>Free</li>
-            <li>International</li>
-            <li>Secure</li>
-            <li>Trustworthy</li>
-          </ul>
-         
-        </div>
-        <div class="p-5 border rounded mt-3">
-          <h3>Examples</h3>
-          <p>Small online tools like,</p>
-          <ul class="my-3">
-            <li>Lorem Ipsum Generator</li>
-            <li>Random Number Generator</li>
-            <li>Convert to .mp4</li>
-            <li>Convert to .pdf</li>
-            <li>Unarchive File</li>
-            <li>Stopwatch</li>
-          </ul>
-        </div>
-        
-      </main>
+        <main class="container">
+            <h1 class="mt-5 animate__animated animate__fadeInDown">How it works</h1>
+            <div class="p-5 border rounded mt-3">
+                <h1 class="display-6">Collecting the best web apps on the web and link them.</h1>
+            </div>
+            <div class="p-5 border rounded mt-3">
+                <p>
+                    We and our community search for the best web apps for small tasks, like generators, converters, or other tools. Then we choose the best one of every kind and award this page by including them in our network. This means
+                    we link to them, and other award-winning web apps too. With this, we want to achieve that users can find a reliable web app if they look for it quickly.
+                </p>
+            </div>
+            <div class="p-5 border rounded mt-3">
+                <h3>Our web apps</h3>
 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/8.2.1/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="/__/firebase/8.2.1/firebase-analytics.js"></script>
-
-<!-- Initialize Firebase -->
-<script src="/__/firebase/init.js"></script>
-</body>
+                <ul class="my-3">
+                    <li>Simple</li>
+                    <li>Free</li>
+                    <li>International</li>
+                    <li>Secure</li>
+                    <li>Trustworthy</li>
+                </ul>
+            </div>
+            <div class="p-5 border rounded mt-3">
+                <h3>Examples</h3>
+                <p>Small online tools like,</p>
+                <ul class="my-3">
+                    <li>Lorem Ipsum Generator</li>
+                    <li>Random Number Generator</li>
+                    <li>Convert to .mp4</li>
+                    <li>Convert to .pdf</li>
+                    <li>Unarchive File</li>
+                    <li>Stopwatch</li>
+                </ul>
+            </div>
+        </main>
+    </body>
 </html>
