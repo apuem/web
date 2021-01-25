@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator - apuem</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+function logResults(json) {
+    console.log(json)
+}
+
+$.ajax({
+    url: "https://raw.githubusercontent.com/apuem/apuem.github.io/master/wal.json",
+    dataType: "json"
+}).done(function(result){
+    console.log(result);
+    var selected = result.filter(function(item) {
+                return item.id == 1;
+              });
+
+              alert(selected[0].rawurl);
+              window.location.href = selected[0].rawurl;
+              
+});
+
+      
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZEPRDVXYRZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-ZEPRDVXYRZ');
+    </script>
+</head>
+<body>
+    <p title="description"></p>
+</body>
+</html>

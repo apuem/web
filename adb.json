@@ -1,0 +1,18 @@
+[
+{
+    "id": "0",
+    "title": "Lorem Ispum Generator",
+    "rawurl": "loremipsum",
+    "suggestedby": "loip-genr",
+    "reason": "third-party-linked",
+    "type": "generator"  
+},
+{
+    "id": "1",
+    "title": "Lorem Ispum Generator",
+    "rawurl": "loremipsum",
+    "suggestedby": "loip-genr",
+    "reason": "third-party-linked",
+    "type": "generator"  
+}
+]
