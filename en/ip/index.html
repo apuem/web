@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Part of the apuem collection">
+        <meta name="keywords" content="lorem, ipsum, generator, apuem">
+        <meta name="author" content="apuem">
+        <title>IP Adress Analysis - apuem</title>
+        <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+        <link href="../../fonts/fonts.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <!--<script>
+            function logResults(json) {
+                console.log(json);
+            }
+
+            $.ajax({
+                url: "https://raw.githubusercontent.com/apuem/apuem.github.io/master/wal.json",
+                dataType: "json",
+            }).done(function (result) {
+                console.log(result);
+                var selected = result.filter(function (item) {
+                    return item.id == 8;
+                });
+
+                window.location.href = selected[0].rawurl;
+            });
+        </script>-->
+        <script>
+
+                var asn = "";
+                var continent_code = "";
+                var country = "";
+                var country_area = "";
+                var country_calling_code = "";
+                var country_capital = "";
+                var country_code = "";
+                var country_code_iso3 = "";
+                var country_population = "";
+                var country_tld = "";
+                var currency = "";
+                var currency_name = "";
+                var in_eu = "";
+                var languages = "";
+                var latitude = "";
+                var longitude = "";
+                var region_code = "";
+                var timezone = "";
+                var utc_offset = "";
+
+            fetch('https://ipapi.co/json/')
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(data) {
+                console.log(data);
+                var result = data;
+                var ip = result.ip
+                var version = result.version
+                var org = result.org
+                var city = result.city
+                var postal = result.postal
+                var region = result.region
+                var country_name = result.country_name
+                asn = result.asn
+                continent_code = result.continent_code
+                country = result.country
+                country_area = result.country_area
+                country_calling_code = result.country_calling_code
+                country_capital = result.country_capital
+                country_code = result.country_code
+                country_code_iso3 = result.country_code_iso3
+                country_population = result.country_population
+                country_tld = result.country_tld
+                currency = result.currency
+                currency_name = result.currency_name
+                in_eu = result.in_eu
+                languages = result.languages
+                latitude = result.latitude
+                longitude = result.longitude
+                region_code = result.region_code
+                timezone = result.timezone
+                utc_offset = result.utc_offset
+
+                
+                document.getElementById("ip").innerHTML = ip;
+                document.getElementById("version").innerHTML = version;
+                document.getElementById("org").innerHTML = org;
+                document.getElementById("city").innerHTML = city;
+                document.getElementById("postal").innerHTML = postal;
+                document.getElementById("region").innerHTML = region;
+                document.getElementById("country_name").innerHTML = country_name;
+            });
+
+        </script>
+        <div style="width: 35vw; height: 80vh; margin-left: 10vw; margin-top: 10vh; overflow-y: scroll;" class="bg-light rounded-3">
+            <h1 class="pt-5 px-5">IP Adress Analysis</h1>
+            <hr class="text-muted">
+            <div class="bg-white rounded-3 mx-5 my-2">
+                <p class="px-3 pt-3">IP: <span style="line-break: anywhere;" id="ip" class="text-secondary"></span></p>
+                <p class="px-3">Version: <span id="version" class="text-secondary"></span></p>
+                <p class="px-3 pb-3">Organization: <span id="org" class="text-secondary"></span></p>
+            </div>
+            <div class="bg-white rounded-3 mx-5 my-2">
+                <p class="px-3 pt-3">City: <span id="city" class="text-secondary"></span></p>
+                <p class="px-3">Postal: <span id="postal" class="text-secondary"></span></p>
+                <p class="px-3">Region: <span id="region" class="text-secondary"></span></p>
+                <p class="px-3 pb-3">Country: <span id="country_name" class="text-secondary"></span></p>
+            </div>
+            <div class="bg-white rounded-3 mx-5 my-2">
+                <p class="p-3"><a class="link" style="cursor: pointer;" onclick="moreInformation()">More Information</a></p>
+            </div>
+            <div class="mx-auto" style="width: 45px;">
+                <p style="font-family: 'Poppins'; opacity: 70%; cursor: pointer;"><a class="link-dark" href="https://apuem.com">apuem</a></p>
+            </div>
+            
+            
+        </div>
+        <script>
+            function moreInformation() {
+
+                var info = "ASN: " + asn + "\n" + 
+                "Continent Code: " + continent_code + "\n" + 
+                "Country: " + country + "\n" + 
+                "Country Area: " + country_area + "\n" + 
+                "Country Calling Code: " + country_calling_code + "\n" + 
+                "Country Capital: " + country_capital + "\n" + 
+                "Country Code: " + country_code + "\n" + 
+                "Country Code (ISO3): " + country_code_iso3 + "\n" + 
+                "Country Population: " + country_population + "\n" + 
+                "Country TLD: " + country_tld + "\n" + 
+                "Currency: " + currency + "\n" + 
+                "Currency Name: " + currency_name + "\n" + 
+                "In EU: " + in_eu + "\n" + 
+                "Languages: " + languages + "\n" + 
+                "Latitude: " + latitude + "\n" + 
+                "Longitude: " + longitude + "\n" + 
+                "Region Code: " + region_code + "\n" + 
+                "Timezone: " + timezone + "\n" + 
+                "UTC Offset: " + utc_offset;
+                alert(info);
+
+            }
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZEPRDVXYRZ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-ZEPRDVXYRZ");
+        </script>
+    </head>
+    <body>
+        <p title="description"></p>
+    </body>
+</html>
