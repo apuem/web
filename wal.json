@@ -246,6 +246,33 @@
     "urlru": "null",
     "datasecp": "0",
     "designp": "0"
+  },
+  {
+    "id": "9",
+    "title": "Word Counter",
+    "name": "wordcount",
+    "short": "woco-tool",
+    "status": "third-party-linked",
+    "type": "other",
+    "details": [
+      
+    ],
+    "suggestedby": "issambahari@gmail.com",
+    "createdby": "onlinecountword.com",
+    "url": "<a target='_blank' href='https://apuem.com/en/wordcount'>onlinecountword.com</a>",
+    "rawurl": "https://www.onlinecountword.com",
+    "urlzh": "null",
+    "urlnl": "null",
+    "urlfr": "null",
+    "urlde": "null",
+    "urlit": "null",
+    "urles": "null",
+    "urlja": "null",
+    "urlpt": "null",
+    "urlpl": "null",
+    "urlru": "null",
+    "datasecp": "+",
+    "designp": "+"
   }
 ]
 
