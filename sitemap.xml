@@ -1,99 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+      xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9
+            https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
 <url>
-  <loc>http://www.apuem.com/</loc>
+  <loc>https://www.apuem.com/</loc>
   <lastmod>2021-01-26T09:05:10+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://www.apuem.com/suggestions/</loc>
+  <loc>https://www.apuem.com/suggestions/</loc>
   <lastmod>2021-01-26T09:05:10+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.apuem.com/howitworks/</loc>
+  <loc>https://www.apuem.com/howitworks/</loc>
   <lastmod>2021-01-26T09:05:10+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.apuem.com/contact/</loc>
+  <loc>https://www.apuem.com/contact/</loc>
   <lastmod>2021-01-26T09:05:10+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.apuem.com/all/</loc>
+  <loc>https://www.apuem.com/all/</loc>
   <lastmod>2021-01-26T09:05:10+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.apuem.com/suggestions/chinese-version.html</loc>
+  <loc>https://www.apuem.com/suggestions/chinese-version.html</loc>
   <lastmod>2021-01-26T09:05:10+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.apuem.com/suggestions/dutch-version.html</loc>
+  <loc>https://www.apuem.com/suggestions/dutch-version.html</loc>
   <lastmod>2021-01-26T09:05:10+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.apuem.com/suggestions/french-version.html</loc>
+  <loc>https://www.apuem.com/suggestions/french-version.html</loc>
   <lastmod>2021-01-26T09:05:10+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.apuem.com/suggestions/german-version.html</loc>
+  <loc>https://www.apuem.com/suggestions/german-version.html</loc>
   <lastmod>2021-01-26T09:05:10+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.apuem.com/suggestions/italian-version.html</loc>
+  <loc>https://www.apuem.com/suggestions/italian-version.html</loc>
   <lastmod>2021-01-26T09:05:10+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.apuem.com/suggestions/spanish-version.html</loc>
+  <loc>https://www.apuem.com/suggestions/spanish-version.html</loc>
   <lastmod>2021-01-26T09:05:10+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.apuem.com/suggestions/japanese-version.html</loc>
+  <loc>https://www.apuem.com/suggestions/japanese-version.html</loc>
   <lastmod>2021-01-26T09:05:10+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.apuem.com/suggestions/portuguese-version.html</loc>
+  <loc>https://www.apuem.com/suggestions/portuguese-version.html</loc>
   <lastmod>2021-01-26T09:05:10+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.apuem.com/suggestions/polish-version.html</loc>
+  <loc>https://www.apuem.com/suggestions/polish-version.html</loc>
   <lastmod>2021-01-26T09:05:10+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.apuem.com/suggestions/russian-version.html</loc>
+  <loc>https://www.apuem.com/suggestions/russian-version.html</loc>
   <lastmod>2021-01-26T09:05:10+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.apuem.com/index.html</loc>
+  <loc>https://www.apuem.com/index.html</loc>
   <lastmod>2021-01-26T09:05:10+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.apuem.com/database/</loc>
+  <loc>https://www.apuem.com/database/</loc>
   <lastmod>2021-01-26T09:05:10+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.apuem.com/suggestions/index.html</loc>
+  <loc>https://www.apuem.com/suggestions/index.html</loc>
   <lastmod>2021-01-26T09:05:10+00:00</lastmod>
   <priority>0.51</priority>
 </url>
