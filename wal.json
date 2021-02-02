@@ -34,11 +34,7 @@
     "short": "ranu-genr",
     "status": "third-party-linked",
     "type": "generator",
-    "details": [
-      "Radiation resistance",
-      "Turning tiny",
-      "Radiation blast"
-    ],
+    "details": [],
     "suggestedby": "Jayda Crowther",
     "createdby": "random.org",
     "url": "<a target='_blank' href='https://apuem.com/en/randomnumber'>random.org</a>",
@@ -63,9 +59,7 @@
     "short": "pswd-genr",
     "status": "third-party-linked",
     "type": "generator",
-    "details": [
-      
-    ],
+    "details": [],
     "suggestedby": "Aj Welsh",
     "createdby": "passwordsgenerator.net",
     "url": "<a target='_blank' href='https://apuem.com/en/password'>passwordsgenerator.net</a>",
@@ -90,9 +84,7 @@
     "short": "wocl-genr",
     "status": "third-party-linked",
     "type": "other",
-    "details": [
-      
-    ],
+    "details": [],
     "suggestedby": "Ryan Greaves",
     "createdby": "time.is",
     "url": "<a target='_blank' href='https://apuem.com/en/worldclock'>time.is</a>",
@@ -117,9 +109,7 @@
     "short": "qrsc-genr",
     "status": "third-party-linked",
     "type": "other",
-    "details": [
-      
-    ],
+    "details": [],
     "suggestedby": "Sameer Phan",
     "createdby": "app.bytescout.com",
     "url": "<a target='_blank' href='https://apuem.com/en/qrscanner'>app.bytescout.com/barcode-reader/barcode-reader.html</a>",
@@ -144,11 +134,7 @@
     "short": "ranu-genr",
     "status": "third-party-linked",
     "type": "generator",
-    "details": [
-      "Radiation resistance",
-      "Turning tiny",
-      "Radiation blast"
-    ],
+    "details": [],
     "suggestedby": "Jadon Farrow",
     "createdby": "img2go.com",
     "url": "<a target='_blank' href='https://apuem.com/en/rotateimage'>img2go.com/rotate-image</a>",
@@ -168,14 +154,12 @@
   },
   {
     "id": "6",
-    "title": "Conver to .mp4",
+    "title": "Convert to .mp4",
     "name": "mp4",
     "short": "mp4-conv",
     "status": "third-party-linked",
     "type": "converter",
-    "details": [
-      
-    ],
+    "details": [],
     "suggestedby": "Kacper Halliday",
     "createdby": "cloudconvert.com",
     "url": "<a target='_blank' href='https://apuem.com/en/mp4'>cloudconvert.com/mp4-converter</a>",
@@ -200,9 +184,7 @@
     "short": "pdf-conv",
     "status": "third-party-linked",
     "type": "converter",
-    "details": [
-      
-    ],
+    "details": [],
     "suggestedby": "Jonas Duffer",
     "createdby": "smallpdf.com",
     "url": "<a target='_blank' href='https://apuem.com/en/pdf'>smallpdf.com/pdf-converter</a>",
@@ -227,9 +209,7 @@
     "short": "rtf-conv",
     "status": "third-party-linked",
     "type": "converter",
-    "details": [
-      
-    ],
+    "details": [],
     "suggestedby": "Hugo Hayes",
     "createdby": "cloudconvert.com",
     "url": "<a target='_blank' href='https://apuem.com/en/rtf'>cloudconvert.com/rtf-converter</a>",
@@ -254,9 +234,7 @@
     "short": "woco-tool",
     "status": "third-party-linked",
     "type": "other",
-    "details": [
-      
-    ],
+    "details": [],
     "suggestedby": "issambahari@gmail.com",
     "createdby": "onlinecountword.com",
     "url": "<a target='_blank' href='https://apuem.com/en/wordcount'>onlinecountword.com</a>",
@@ -281,9 +259,32 @@
     "short": "ipan-tool",
     "status": "apuem-exclusive-linked",
     "type": "other",
-    "details": [
-      
-    ],
+    "details": [],
+    "suggestedby": "apuem team",
+    "createdby": "app.apuem.com",
+    "url": "<a target='_blank' href='https://apuem.com/en/ip'>app.apuem.com/ip</a>",
+    "rawurl": "https://app.apuem.com/ip",
+    "urlzh": "null",
+    "urlnl": "null",
+    "urlfr": "null",
+    "urlde": "null",
+    "urlit": "null",
+    "urles": "null",
+    "urlja": "null",
+    "urlpt": "null",
+    "urlpl": "null",
+    "urlru": "null",
+    "datasecp": "+",
+    "designp": "+"
+  },
+  {
+    "id": "10",
+    "title": "IP Adress Analysis",
+    "name": "ip",
+    "short": "ipan-tool",
+    "status": "apuem-exclusive-linked",
+    "type": "other",
+    "details": [],
     "suggestedby": "apuem team",
     "createdby": "app.apuem.com",
     "url": "<a target='_blank' href='https://apuem.com/en/ip'>app.apuem.com/ip</a>",
@@ -301,5 +302,6 @@
     "datasecp": "+",
     "designp": "+"
   }
+
 ]
 
