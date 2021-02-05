@@ -127,63 +127,8 @@
         <main class="container">
             <!-- <h1 class="mt-5 animate__animated animate__fadeIn">The web app collection.</h1> -->
             <div class="p-5 border rounded mt-3 animate__animated animate__fadeIn">
-                <h1 class="display-4 animate__animated animate__fadeIn">The worlds biggest web app collection.</h1>
+                <h1 class="display-4 animate__animated animate__fadeIn">404 :: Page not found</h1>
             </div>
-
-            <table class="animate__animated animate__fadeIn" style="width: 100%;" data-sort-name="type" data-sort-order="desc" id="table" data-toggle="table" data-height="460" data-detail-view="true" data-detail-formatter="detailFormatter" data-url="wal.json" data-search="true">
-                <thead>
-                    <tr>
-                        <th data-field="title">Name</th>
-                        <th data-sortable="true" data-field="type">Type</th>
-                        <th data-field="url">URL (International)</th>
-                    </tr>
-                </thead>
-            </table>
-            <script>
-                function detailFormatter(index, row) {
-                    var html = [];
-                    $.each(row, function (key, value) {
-                        html.push("<p><b>" + key + ":</b> " + value + "</p>");
-                    });
-                    return html.join("");
-                }
-            </script>
-            <!-- Modal -->
-            <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
-                <div style="max-width: 100% !important; transform: none !important; margin: 0rem !important; position: relative !important; width: auto !important; pointer-events: none;" class="modal-dialog modal-fullscreen">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="intModalLabel">Suggest a webapp</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <iframe
-                                src="https://docs.google.com/forms/d/e/1FAIpQLSdG5bjuBxm5JlYwO18bK884w8lQqi3nsv2HN_e9ypmAvqN7cQ/viewform?embedded=true"
-                                width="80%"
-                                height="80%"
-                                frameborder="0"
-                                marginheight="0"
-                                class="position-absolute top-50 start-50 translate-middle"
-                                marginwidth="0"
-                            >
-                                Loading…
-                            </iframe>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <script>
-                function detailFormatter(index, row) {
-                    var html = [];
-                    $.each(row, function (key, value) {
-                        html.push("<p><b>" + key + ":</b> " + value + "</p>");
-                    });
-                    return html.join("");
-                }
-            </script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
