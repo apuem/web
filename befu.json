@@ -1,7 +1,17 @@
 [
     {
         "id": "0",
-        "name": "corndog.io",
-        "rawurl": "http://corndog.io"
+        "name": "vinovell.cat",
+        "rawurl": "https://vinovell.cat"
+    },
+    {
+        "id": "1",
+        "name": "design.byform.co",
+        "rawurl": "http://design.byform.co"
+    },
+    {
+        "id": "2",
+        "name": "myriad.video",
+        "rawurl": "https://myriad.video"
     }
 ]
