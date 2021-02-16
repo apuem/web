@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: apuem.com
+Token: e30e6069b41b8779cd8f42586f7a4d48f4c8670421a028c89d094a45e2f68f3e
