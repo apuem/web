@@ -151,7 +151,7 @@
                         <button onclick="goto()" type="button" class="btn btn-outline-secondary btn-sm">Redirect</button>
                     </div>
                 </div>
-                <p class="text-center mt-1 py-0"><strong aria-current="page" style="color: black; font-family: 'Poppins', sans-serif; opacity: 40%;" >apuem</strong></p>
+                <p class="text-center mt-1 py-0" style="cursor: pointer;" onclick="togh()"><strong aria-current="page" style="color: black; font-family: 'Poppins', sans-serif; opacity: 40%;" >apuem</strong></p>
                 
             </div>
             
@@ -162,10 +162,12 @@
         <iframe src="https://bg-apuem.github.io" style="border:none; height: 100vh; width: 100vw; position: absolute; top: 0; z-index: -5;" title="Background"></iframe>
         <script>
 
+            var uniqueIdentifier = 11;
             var title = "";
             var destination = "";
             var createdby = "";
             var name = "";
+
 
             function logResults(json) {
                 console.log(json);
@@ -177,7 +179,7 @@
             }).done(function (result) {
                 console.log(result);
                 var selected = result.filter(function (item) {
-                    return item.id == 11;
+                    return item.id == uniqueIdentifier;
                 });
                 
                 destination = selected[0].rawurl;
@@ -225,6 +227,9 @@
             }
             function todoc() {
                 window.location.href = "../../doc/" + name;
+            }
+            function togh() {
+                window.location.href = "https://www.github.com/apuem";
             }
              
              
