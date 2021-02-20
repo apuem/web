@@ -9,82 +9,117 @@
 
 <url>
   <loc>https://www.apuem.com/</loc>
-  <lastmod>2021-02-20T20:52:51+00:00</lastmod>
+  <lastmod>2021-02-20T21:10:45+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.apuem.com/en/loremipsum/</loc>
-  <lastmod>2021-02-20T20:52:51+00:00</lastmod>
+  <lastmod>2021-02-20T21:10:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.apuem.com/en/password/</loc>
-  <lastmod>2021-02-20T20:52:51+00:00</lastmod>
+  <lastmod>2021-02-20T21:10:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.apuem.com/en/worldclock/</loc>
-  <lastmod>2021-02-20T20:52:51+00:00</lastmod>
+  <loc>https://www.apuem.com/en/random-number/</loc>
+  <lastmod>2021-02-20T21:10:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.apuem.com/en/qr-scanner/</loc>
+  <lastmod>2021-02-20T21:10:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.apuem.com/en/rotate-image/</loc>
+  <lastmod>2021-02-20T21:10:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.apuem.com/en/mp4/</loc>
-  <lastmod>2021-02-20T20:52:51+00:00</lastmod>
+  <lastmod>2021-02-20T21:10:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.apuem.com/en/pdf/</loc>
-  <lastmod>2021-02-20T20:52:51+00:00</lastmod>
+  <lastmod>2021-02-20T21:10:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.apuem.com/en/rtf/</loc>
-  <lastmod>2021-02-20T20:52:51+00:00</lastmod>
+  <lastmod>2021-02-20T21:10:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.apuem.com/en/word-count/</loc>
+  <lastmod>2021-02-20T21:10:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.apuem.com/en/ip/</loc>
-  <lastmod>2021-02-20T20:52:51+00:00</lastmod>
+  <lastmod>2021-02-20T21:10:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.apuem.com/en/stopwatch/</loc>
-  <lastmod>2021-02-20T20:52:51+00:00</lastmod>
+  <lastmod>2021-02-20T21:10:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.apuem.com/en/timer/</loc>
-  <lastmod>2021-02-20T20:52:51+00:00</lastmod>
+  <lastmod>2021-02-20T21:10:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.apuem.com/en/alarm/</loc>
-  <lastmod>2021-02-20T20:52:51+00:00</lastmod>
+  <lastmod>2021-02-20T21:10:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.apuem.com/en/resize-image/</loc>
+  <lastmod>2021-02-20T21:10:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.apuem.com/en/crop-image/</loc>
+  <lastmod>2021-02-20T21:10:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.apuem.com/en/opacity/</loc>
-  <lastmod>2021-02-20T20:52:51+00:00</lastmod>
+  <lastmod>2021-02-20T21:10:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.apuem.com/en/image-watermark/</loc>
+  <lastmod>2021-02-20T21:10:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.apuem.com/en/preview/</loc>
-  <lastmod>2021-02-20T20:52:51+00:00</lastmod>
+  <lastmod>2021-02-20T21:10:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.apuem.com/en/edit-pdf/</loc>
+  <lastmod>2021-02-20T21:10:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.apuem.com/en/unarchive/</loc>
-  <lastmod>2021-02-20T20:52:51+00:00</lastmod>
+  <lastmod>2021-02-20T21:10:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.apuem.com/en/nonsense/</loc>
-  <lastmod>2021-02-20T20:52:51+00:00</lastmod>
+  <lastmod>2021-02-20T21:10:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.apuem.com/en/beautiful/</loc>
-  <lastmod>2021-02-20T20:52:51+00:00</lastmod>
+  <lastmod>2021-02-20T21:10:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
