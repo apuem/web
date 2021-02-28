@@ -186,10 +186,14 @@
                 title = selected[0].title;
                 createdby = selected[0].createdby;
                 name = selected[0].name;
+                details = selected[0].details;
+                keywords = selected[0].keywords;
                 document.getElementById("title").innerHTML = title;
                 document.getElementById("createdby").innerHTML = createdby;
                 document.getElementById("url").innerHTML = destination;
                 document.title = title + " - apuem";
+                document.getElementsByTagName('meta')["keywords"].content = keywords + ", apuem, generator, webapp, tools";
+                document.getElementsByTagName('meta')["description"].content = details + " - apuem";
             });
             
 
