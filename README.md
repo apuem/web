@@ -2,4 +2,4 @@
 
 We collect web apps to provide for every user a secure, free and simple user experience.
 
-If you like to submit a web app, please visit: (apuem.com[ttps://www.apuem.com] and click submit.
+If you like to submit a web app, please visit: (apuem.com)[https://www.apuem.com] and click submit.
