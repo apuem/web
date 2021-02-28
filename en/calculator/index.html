@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Part of the apuem collection">
+        <meta name="keywords" content="generator, apuem">
+        <meta name="author" content="apuem">
+        <title>[title] - apuem</title>
+        <link rel="apple-touch-icon" sizes="57x57" href="../../images/favicon/apple-icon-57x57.png"/>
+        <link rel="apple-touch-icon" sizes="60x60" href="../../images/favicon/apple-icon-60x60.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../../images/favicon/apple-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="76x76" href="../../images/favicon/apple-icon-76x76.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../../images/favicon/apple-icon-114x114.png"/>
+        <link rel="apple-touch-icon" sizes="120x120" href="../../images/favicon/apple-icon-120x120.png"/>
+        <link rel="apple-touch-icon" sizes="144x144" href="../../images/favicon/apple-icon-144x144.png"/>
+        <link rel="apple-touch-icon" sizes="152x152" href="../../images/favicon/apple-icon-152x152.png"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-icon-180x180.png"/>
+        <link rel="icon" type="image/png" sizes="192x192" href="../../images/favicon/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="96x96" href="../../images/favicon/favicon-96x96.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png"/>
+        <link rel="manifest" href="../../images/favicon/manifest.json"/>
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+        <link href="../../fonts/fonts.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/b7ef0ef2a2.js" crossorigin="anonymous"></script>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZEPRDVXYRZ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-ZEPRDVXYRZ");
+        </script>
+
+        
+        <style>
+        
+
+            .main {
+                width: 35vw;
+                margin-left: 10vw;
+            }
+
+            @media screen and (max-width: 1079px) {
+            .main {
+                width:45vw;
+                margin-left: 7,5vw;
+            }
+            }
+            @media screen and (max-width: 850px) {
+            .main {
+                width:90vw;
+                margin-left: 5vw;
+            }
+            }
+            .content::-webkit-scrollbar {
+                display: none;
+            }
+
+            /* Hide scrollbar for IE, Edge and Firefox */
+            .content {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+            }
+</style>
+
+        
+        
+    </head>
+    <body>
+        
+        <div class="main" style="height: 80vh; margin-top: 10vh; border-radius: 20px !important; background-color: white;" class="bg-white border border-1">
+            <div style="height: 10%;">
+                <h6 class="pt-4 px-5"><span id="title">[title]</span> <span style="font-weight: 400;" class="text-secondary">by <span id="createdby">[createdby]</span></span></h6>
+            </div>
+            
+            <hr class="text-muted my-0">
+            <div class="mt-2 content" style="overflow-y: scroll; height: 75%;">
+            <div class="bg-light rounded-3 mx-5 my-2">
+                <p class="px-3 py-3 content text-nowrap" style="overflow-x: scroll;">Checked Page: <span id="url" class="text-muted">[url]</span></p>
+            </div>
+            <div class="bg-light rounded-3 mx-5 my-2">
+                <p class="px-3 pt-3"><i class="far fa-check-circle text-success"></i> Secure<span style="line-break: anywhere;" id="pageName" class="text-secondary user-select-all"></span></p>
+                <p class="px-3"><i class="far fa-check-circle text-success"></i> Simple<span style="line-break: anywhere;" id="pageName" class="text-secondary user-select-all"></span></p>
+                <p class="px-3 pb-3"><i class="far fa-check-circle text-success"></i> Free<span style="line-break: anywhere;" id="pageName" class="text-secondary user-select-all"></span></p>
+            </div>
+            <div class="bg-white rounded-3 mx-5 my-2">
+                <button onclick="goto()" class="btn btn-lg btn-outline-primary" style="width: 100%;">Get me there!</button>
+            </div>
+            
+            <div class="bg-light rounded-3 mx-5 my-2">
+                <p class="p-3"><i class="fas fa-plus px-2"></i><a target="blank_" class="link" style="cursor: pointer;" href="https://docs.google.com/forms/d/e/1FAIpQLSdG5bjuBxm5JlYwO18bK884w8lQqi3nsv2HN_e9ypmAvqN7cQ/viewform?usp=sf_link">Add yours!</a></p>
+            </div>
+            
+            <div class="bg-light rounded-3 mx-5 my-2">
+                <p class="p-3"><i class="fas fa-info-circle px-2"></i><a class="link" style="cursor: pointer;" onclick="todoc()">Learn more</a></p>
+            </div>
+            <hr class="text-muted my-0">
+            <div class="bg-light rounded-3 mx-5 my-3">
+                <p class="py-3 my-0" data-bs-toggle="collapse" href="#collapseLang" role="button" aria-expanded="false" aria-controls="collapseLang"><i class="fas fa-globe px-2"></i>Language</p>
+                <div class="collapse" id="collapseLang">
+                <hr class="text-muted my-0">
+                <p class="p-3 m-0"><a class="link-dark" style="cursor: pointer;" onclick="tozh()">Chinese (simplified)</a></p>
+                <hr class="text-muted my-0">
+                <p class="p-3 m-0"><a class="link-dark" style="cursor: pointer;" onclick="tonl()">Dutch</a></p>
+                <hr class="text-muted my-0">
+                <p class="p-3 m-0"><a class="link-dark" style="cursor: pointer;" onclick="tofr()">French</a></p>
+                <hr class="text-muted my-0">
+                <p class="p-3 m-0"><a class="link-dark" style="cursor: pointer;" onclick="tode()">German</a></p>
+                <hr class="text-muted my-0">
+                <p class="p-3 m-0"><a class="link-dark" style="cursor: pointer;" onclick="toit()">Italian</a></p>
+                <hr class="text-muted my-0">
+                <p class="p-3 m-0"><a class="link-dark" style="cursor: pointer;" onclick="toes()">Spanish</a></p>
+                <hr class="text-muted my-0">
+                <p class="p-3 m-0"><a class="link-dark" style="cursor: pointer;" onclick="toja()">Japanese</a></p>
+                <hr class="text-muted my-0">
+                <p class="p-3 m-0"><a class="link-dark" style="cursor: pointer;" onclick="topt()">Portuguese</a></p>
+                <hr class="text-muted my-0">
+                <p class="p-3 m-0"><a class="link-dark" style="cursor: pointer;" onclick="topl()">Polish</a></p>
+                <hr class="text-muted my-0">
+                <p class="p-3 m-0"><a class="link-dark" style="cursor: pointer;" onclick="toru()">Russian</a></p>
+                </div>
+            </div>
+            <div class="bg-light rounded-3 mx-5 my-3">
+
+                <p class="p-3 m-0"><i class="far fa-flag px-2"></i><a target="blank_" class="link-dark" style="cursor: pointer;" href="https://forms.gle/z3ZzyZ9ThgVCwAUg8">Report</a></p>
+                <!-- <hr class="text-muted my-0">
+                <p class="p-3 m-0"><i class="fas fa-file-alt px-2"></i><a class="link-dark" style="cursor: pointer;" href="../privacypolicy/index.html">Privacy Policy</a></p>
+                <hr class="text-muted my-0">
+                <p class="p-3"><i class="far fa-file-alt px-2"></i><a class="link-dark" style="cursor: pointer;" href="../imprint/index.html">Imprint</a></p> -->
+            </div>
+            
+            
+        </div>
+        <hr class="text-muted  my-0">
+            <div class="mx-auto my-0" style="height: 15%">
+                <div  class="mx-auto mt-2" style="width: fit-content;">
+                    <div class="btn-group mx-auto" style="width: 80%;" role="group" aria-label="Basic outlined example">
+                        <button onclick="location.reload()" type="button" class="btn btn-outline-secondary btn-sm">Reload</button>
+                        <button onclick="goto()" type="button" class="btn btn-outline-secondary btn-sm">Redirect</button>
+                    </div>
+                </div>
+                <p class="text-center mt-1 py-0" style="cursor: pointer;" onclick="togh()"><strong aria-current="page" style="color: black; font-family: 'Poppins', sans-serif; opacity: 40%;" >apuem</strong></p>
+                
+            </div>
+            
+            
+        </div>
+        
+        <!-- <div class="position-absolute bottom-0 start-0"><p class="my-1 mx-2" style="font-size: .75rem; color: white; opacity: 50%;">Copyright © 2021 Apuem <a class="mx-2 link-light">Imprint</a> | <a class="mx-2 link-light">Data Policy</a> | <a class="mx-2 link-light">Learn more</a> | <a class="mx-2 link-light">Report</a></p></div> -->
+        <iframe src="https://bg-apuem.github.io" style="border:none; height: 100vh; width: 100vw; position: absolute; top: 0; z-index: -5;" title="Background"></iframe>
+        <script>
+
+            var uniqueIdentifier = 26;
+            var title = "";
+            var destination = "";
+            var createdby = "";
+            var name = "";
+
+
+            function logResults(json) {
+                console.log(json);
+            }
+
+            $.ajax({
+                url: "https://raw.githubusercontent.com/apuem/apuem.github.io/master/wal.json",
+                dataType: "json",
+            }).done(function (result) {
+                console.log(result);
+                var selected = result.filter(function (item) {
+                    return item.id == uniqueIdentifier;
+                });
+                
+                destination = selected[0].rawurl;
+                title = selected[0].title;
+                createdby = selected[0].createdby;
+                name = selected[0].name;
+                document.getElementById("title").innerHTML = title;
+                document.getElementById("createdby").innerHTML = createdby;
+                document.getElementById("url").innerHTML = destination;
+                document.title = title + " - apuem";
+            });
+            
+
+            function goto() {
+                window.location.href = destination;
+
+                }
+
+            function tozh() {
+                window.location.href = "../../zh/" + name;
+            }
+            function tonl() {
+                window.location.href = "../../nl/" + name;
+            }
+            function tofr() {
+                window.location.href = "../../fr/" + name;
+            }
+            function tode() {
+                window.location.href = "../../de/" + name;
+            }
+            function toit() {
+                window.location.href = "../../it/" + name;
+            }
+            function toes() {
+                window.location.href = "../../es/" + name;
+            }
+            function topt() {
+                window.location.href = "../../ja/" + name;
+            }
+            function topl() {
+                window.location.href = "../../pl/" + name;
+            }
+            function toru() {
+                window.location.href = "../../ru/" + name;
+            }
+            function todoc() {
+                window.location.href = "../../doc/" + name;
+            }
+            function togh() {
+                window.location.href = "https://www.github.com/apuem";
+            }
+             
+             
+             
+             
+                
+
+                
+        </script>
+    </body>
+</html>
