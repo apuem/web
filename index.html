@@ -1,241 +1,71 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>apuem</title>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Part of the apuem collection" />
-        <meta name="keywords" content="webapp, web, app, apuem" />
-        <meta name="author" content="apuem"/>
-        <meta http-equiv='content-language' content='en-US'>
-        <meta name="keywords" content="The Web App Collection. We collect every kind of web apps to provide the best possible experience on using web applications. Our tools are free, secure and simple to use.">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
-        <link href="fonts/fonts.css" rel="stylesheet">
-        <meta name="yandex-verification" content="1a2320211a9fc605" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png" />
-        <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png" />
-        <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png" />
-        <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png" />
-        <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png" />
-        <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png" />
-        <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png" />
-        <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png" />
-        <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon/android-icon-192x192.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png" />
-        <link rel="manifest" href="/manifest.json" />
-        <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-        <meta name="theme-color" content="#ffffff" />
-        <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.18.1/dist/bootstrap-table.min.css" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.18.1/dist/bootstrap-table.min.css" />
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZEPRDVXYRZ"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
-
-            gtag("config", "G-ZEPRDVXYRZ");
-        </script>
-        <style>
-            html,
-            body {
-                overflow-x: hidden; /* Prevent scroll on narrow devices */
-            }
-
-            @media (max-width: 991.98px) {
-                .offcanvas-collapse {
-                    position: fixed;
-                    top: 56px; /* Height of navbar */
-                    bottom: 0;
-                    left: 100%;
-                    width: 100%;
-                    padding-right: 1rem;
-                    padding-left: 1rem;
-                    overflow-y: auto;
-                    visibility: hidden;
-                    background-color: #343a40;
-                    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
-                }
-                .offcanvas-collapse.open {
-                    visibility: visible;
-                    transform: translateX(-100%);
-                }
-            }
-
-            .nav-scroller {
-                position: relative;
-                z-index: 2;
-                height: 2.75rem;
-                overflow-y: hidden;
-            }
-
-            .nav-scroller .nav {
-                display: flex;
-                flex-wrap: nowrap;
-                padding-bottom: 1rem;
-                margin-top: -1px;
-                overflow-x: auto;
-                color: rgba(255, 255, 255, 0.75);
-                text-align: center;
-                white-space: nowrap;
-                -webkit-overflow-scrolling: touch;
-            }
-
-            .nav-underline .nav-link {
-                padding-top: 0.75rem;
-                padding-bottom: 0.75rem;
-                font-size: 0.875rem;
-                color: #6c757d;
-            }
-
-            .nav-underline .nav-link:hover {
-                color: #007bff;
-            }
-
-            .nav-underline .active {
-                font-weight: 500;
-                color: #343a40;
-            }
-
-            .text-white-50 {
-                color: rgba(255, 255, 255, 0.5);
-            }
-
-            .bg-purple {
-                background-color: #6f42c1;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="nav-scroller bg-white shadow-sm">
-            <nav class="nav nav-underline" aria-label="Secondary navigation">
-                <a class="nav-link active" aria-current="page" style="color: black; font-family: 'Poppins', sans-serif;" href="/"><strong>apuem</strong></a>
-                <a class="nav-link text-secondary" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#editModal">
-                    Submit
-                </a>
-                <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
-                    <li class="nav-item col-6 col-md-auto">
-                      <a class="nav-link p-2" href="https://github.com/apuem" target="_blank" rel="noopener">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" class="navbar-nav-svg d-inline-block align-text-top" style="position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); left: 0; right: 0; margin: auto; text-align: center;"  viewBox="0 0 512 499.36" role="img"><title>GitHub</title><path fill="currentColor" fill-rule="evenodd" d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z"></path></svg>
-                        
-                      </a>
-                    </li>
-                    <li class="nav-item col-6 col-md-auto">
-                      <a class="nav-link p-2" href="https://twitter.com/apuemdev" target="_blank" rel="noopener">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" class="navbar-nav-svg d-inline-block align-text-top" style="position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); left: 0; right: 0; margin: auto; text-align: center;" viewBox="0 0 512 416.32" role="img"><title>Twitter</title><path fill="currentColor" d="M160.83 416.32c193.2 0 298.92-160.22 298.92-298.92 0-4.51 0-9-.2-13.52A214 214 0 0 0 512 49.38a212.93 212.93 0 0 1-60.44 16.6 105.7 105.7 0 0 0 46.3-58.19 209 209 0 0 1-66.79 25.37 105.09 105.09 0 0 0-181.73 71.91 116.12 116.12 0 0 0 2.66 24c-87.28-4.3-164.73-46.3-216.56-109.82A105.48 105.48 0 0 0 68 159.6a106.27 106.27 0 0 1-47.53-13.11v1.43a105.28 105.28 0 0 0 84.21 103.06 105.67 105.67 0 0 1-47.33 1.84 105.06 105.06 0 0 0 98.14 72.94A210.72 210.72 0 0 1 25 370.84a202.17 202.17 0 0 1-25-1.43 298.85 298.85 0 0 0 160.83 46.92"></path></svg>
-                        
-                      </a>
-                    </li>
-                  </ul>
-            </nav>
-        </div>
-        <main class="container">
-            <!-- <h1 class="mt-5 animate__animated animate__fadeIn">The web app collection.</h1> -->
-            <div class="p-5 border rounded mt-3 animate__animated animate__fadeIn">
-                <h1 class="display-4 animate__animated animate__fadeIn">The worlds biggest web app collection.</h1>
-                <p class="text-secondary"><pre><code class="text-secondary">apuem.com/[language code]/[web app name]</code></pre></p>
-                <p class="text-secondary">Currently <strong>v0.1-beta2</strong></p>
-            </div>
-
-            <table class="animate__animated animate__fadeIn" style="width: 100%;" data-sort-name="type" data-sort-order="desc" id="table" data-toggle="table" data-height="460" data-detail-view="true" data-detail-formatter="detailFormatter" data-url="wal.json" data-search="true">
-                <thead>
-                    <tr>
-                        <th data-field="title">Name</th>
-                        <th data-sortable="true" data-field="type">Type</th>
-                        <th data-field="url">URL (International)</th>
-                    </tr>
-                </thead>
-            </table>
-            <noscript>
-
-                Try to enable javascript
-                <a href="en/loremipsum/">loremipsum</a>
-                <a href="en/password/">password</a>
-                <a href="en/worldclock/">worldclock</a>
-                <a href="en/random-number/">random-number</a>
-                <a href="en/qr-scanner/">qr-scanner</a>
-                <a href="en/rotate-image/">rotate-image</a>
-                <a href="en/mp4/">mp4</a>
-                <a href="en/pdf/">pdf</a>
-                <a href="en/rtf/">rtf</a>
-                <a href="en/word-count/">word-count</a>
-                <a href="en/ip/">ip</a>
-                <a href="en/stopwatch/">stopwatch</a>
-                <a href="en/timer/">timer</a>
-                <a href="en/alarm/">alarm</a>
-                <a href="en/resize-image/">resize-image</a>
-                <a href="en/crop-image/">crop-image</a>
-                <a href="en/opacity/">opacity</a>
-                <a href="en/black-white/">black-white</a>
-                <a href="en/image-watermark/">image-watermark</a>
-                <a href="en/preview/">preview</a>
-                <a href="en/edit-pdf/">edit-pdf</a>
-                <a href="en/unarchive/">unarchive</a>
-                <a href="en/nonsense/">nonsense</a>
-                <a href="en/beautiful/">beautiful</a>
-                
-            </noscript>
-            <script>
-                function detailFormatter(index, row) {
-                    var html = [];
-                    $.each(row, function (key, value) {
-                        html.push("<p><b>" + key + ":</b> " + value + "</p>");
-                    });
-                    return html.join("");
-                }
-            </script>
-            <!-- Modal -->
-            <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
-                <div style="max-width: 100% !important; transform: none !important; margin: 0rem !important; position: relative !important; width: auto !important; pointer-events: none;" class="modal-dialog modal-fullscreen">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="intModalLabel">Suggest a webapp</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <iframe
-                                src="https://docs.google.com/forms/d/e/1FAIpQLSdG5bjuBxm5JlYwO18bK884w8lQqi3nsv2HN_e9ypmAvqN7cQ/viewform?embedded=true"
-                                width="80%"
-                                height="80%"
-                                frameborder="0"
-                                marginheight="0"
-                                class="position-absolute top-50 start-50 translate-middle"
-                                marginwidth="0"
-                            >
-                                Loading…
-                            </iframe>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apuem</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+    <a style="font-weight: 600; font-size: 1.25em; padding: 1.5vw 5vw; float: left; color: #111111 !important; text-decoration: none !important;" href="https://www.apuem.com">apuem</a>
+    <a style="font-weight: 400; font-size: 0.75em; padding: 2vw 7.5vw; float: right; color: #111111 !important; text-decoration: none !important;" href="https://www.apuem.com/more">MORE</a>
+    <div style="width: 100%;" class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
+        <div style="padding-top: 10vh;" class=""><p style="font-size: 2em; font-weight: 500;">start a new document</p></div>
+        <div style="padding-bottom: 20vh;" class=""><input onkeyup="searching()" autocomplete="false" type="text" id="search-bar" name="search" placeholder="search"></div>
+        <div style="height: 40vh; width: 60vw;" class="list-border">
+            <ul style="list-style: none;" id="suggestions">
+                <li onclick="send('pdf');">
+                    <div style="width: 100%; border-bottom: 1px solid #dcdcdc;" class="hover p-2 d-flex flex-column justify-content-center">
+                        <div>
+                            <p class="mb-0 small">DOWNLOAD</p>
+                            <p class="mb-0" style="font-size: 1.5em; font-weight: 500;">.PDF</p>
                         </div>
                     </div>
-                </div>
-            </div>
-            <script>
-                function detailFormatter(index, row) {
-                    var html = [];
-                    $.each(row, function (key, value) {
-                        html.push("<p><b>" + key + ":</b> " + value + "</p>");
-                    });
-                    return html.join("");
+                </li>
+                <li onclick="send('html');">
+                    <div style="width: 100%; border-bottom: 1px solid #dcdcdc" class="hover p-2 d-flex flex-column justify-content-center">
+                        <div>
+                            <p class="mb-0 small">PREVIEW</p>
+                            <p class="mb-0" style="font-size: 1.5em; font-weight: 500;">.HTML</p>
+                        </div>
+                    </div>
+                </li>
+                <li onclick="send('json');">
+                    <div style="width: 100%; border-bottom: 1px solid #dcdcdc" class="hover p-2 d-flex flex-column justify-content-center">
+                        <div>
+                            <p class="mb-0 small">PREVIEW</p>
+                            <p class="mb-0" style="font-size: 1.5em; font-weight: 500;">.JSON</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function searching() {
+            var input, autocomplete, ul, li, a, i;
+            input = document.getElementById("search-bar");
+            autocomplete = input.value.toUpperCase();
+            ul = document.getElementById("suggestions");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("div")[0];
+                if (a.innerHTML.toUpperCase().indexOf(autocomplete) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
                 }
-            </script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-            <script src="https://unpkg.com/bootstrap-table@1.18.1/dist/bootstrap-table.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-        </main>
-    </body>
+            }
+        }
+
+        function send(dest) {
+            location.href = "https://www.apuem.com/" + dest;
+        }
+    </script>
+</body>
 </html>

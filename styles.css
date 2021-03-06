@@ -1,0 +1,40 @@
+body {
+    background-color: #F5F5F5 !important;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+p {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+input[type=text] {
+    padding: 12px 20px;
+    width: 30vw;
+    height: 10vh;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 0.5px solid #DCDCDC;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    border-radius: 8px;
+    color: #111111;
+    background-color: #F5F5F5;
+  }
+  
+  input[type=text]:focus {
+    border: 0.5px solid #979797;
+  }
+
+  .hover {
+    transition: 0.7s;
+  }
+  
+  .hover:hover {
+    background-color: #DCDCDC;
+  }
+
+  .list-border {
+    border-right: 0.5px solid #DCDCDC;
+    border-left: 0.5px solid #DCDCDC;
+  }
