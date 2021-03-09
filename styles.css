@@ -13,6 +13,7 @@ h1 {
 
 a {
   font-family: 'Space Grotesk', sans-serif !important;
+  text-decoration: none !important;
 }
 
 input[type=text] {
@@ -21,7 +22,7 @@ input[type=text] {
     height: 10vh;
     margin: 8px 0;
     box-sizing: border-box;
-    border: 0.5px solid #DCDCDC;
+    border: 1px solid #DCDCDC;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     outline: none;
@@ -39,7 +40,7 @@ input[type=text] {
   }
   
   input[type=text]:focus {
-    border: 0.5px solid #979797;
+    border: 1px solid #979797;
   }
 
   .hover {
@@ -51,12 +52,12 @@ input[type=text] {
   }
 
   .list-border {
-    border-right: 0.5px solid #DCDCDC;
-    border-left: 0.5px solid #DCDCDC;
+    border-right: 1px solid #DCDCDC;
+    border-left: 1px solid #DCDCDC;
   }
 
   .show-container {
-    border: 0.5px solid #DCDCDC;
+    border: 1px solid #DCDCDC;
     width: 50vw;
     height: 50vh;
   }
@@ -67,4 +68,24 @@ input[type=text] {
 
   .hide {
     display: none;
+  }
+
+  .jname {
+    color: blue;
+  }
+
+  .jvalue {
+    color: red;
+  }
+
+  .jbvalue {
+    color: darkblue;
+  }
+
+  .jivalue {
+    color: green;
+  }
+
+  .closing:hover {
+    cursor: url("images/close.svg"), auto !important;
   }

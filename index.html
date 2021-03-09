@@ -21,8 +21,17 @@
 </head>
 <body>
     <a style="font-weight: 600; font-size: 1.25em; padding: 1.5vw 5vw; float: left; color: #111111 !important; text-decoration: none !important;" href="https://www.apuem.com">apuem</a>
-    <a style="font-weight: 400; font-size: 0.75em; padding: 2vw 7.5vw; float: right; color: #111111 !important; text-decoration: none !important;" href="https://www.apuem.com/more">MORE</a>
-    <div style="width: 100%;" class="d-flex flex-column justify-content-center align-items-center">
+    <a style="font-weight: 400; font-size: 0.75em; padding: 2vw 7.5vw; float: right; color: #111111 !important; text-decoration: none !important; cursor: pointer;" onclick="openNav()">MORE</a>
+    <div id="sideNav" style="height: 100%; width: 0px; position: fixed; border: 0.5px solid #DCDCDC; z-index: 1; background-color: #F5F5F5; overflow-x: hidden; right: 0px;">
+        <a style="font-weight: 400; font-size: 0.75em; padding: 2vw 7.5vw; float: right; color: #111111 !important; text-decoration: none !important; cursor: pointer" onclick="closeNav()">CLOSE</a>
+        <h2 class="p-5">Search for your document and start it.</h2>
+        <hr>
+        <h3 class="py-3 px-5">Email us. <a href="mailto:suppor†@apuem.com">support@apuem.com</a></h3>
+        <h3 class="py-3 px-5">Find us on Twitter. <a href="https://twitter.com/apuemdev">@apuemdev</a></h3>
+        <h3 class="py-3 px-5">See more on GitHub. <a href="https://github.com/apuem">github.com/apuem</a></h3>
+    </div>
+    <div id="sideOverlay" style="height: 100%; width: 100vw; position: fixed; overflow-x: hidden; background-color: #111111; opacity: 50%; right: 0px; display: none;"> Test</div>
+    <div id="main" style="width: 100%;" class="d-flex flex-column justify-content-center align-items-center">
         <div style="padding-top: 10vh;" class=""><h1 style="font-size: 2em; font-weight: 500;">start a new document</h1></div>
         <div style="padding-bottom: 20vh;">
             <form autocomplete="off">
@@ -31,11 +40,11 @@
         </div>
         <div style="height: 40vh; width: 60vw; overflow-y: scroll;" class="list-border">
             <ul style="list-style: none;" id="suggestions">
-                <li onclick="send('download/docx');" style="cursor: pointer;">
+                <li onclick="send('json');" style="cursor: pointer;">
                     <div style="width: 100%; border-bottom: 1px solid #dcdcdc;" class="hover p-2 d-flex flex-column justify-content-center">
                         <div>
-                            <p class="mb-0 small">DOWNLOAD</p>
-                            <p class="mb-0" style="font-size: 1.5em; font-weight: 500;">.docx</p>
+                            <p class="mb-0 small">PREVIEW</p>
+                            <p class="mb-0" style="font-size: 1.5em; font-weight: 500;">.json</p>
                         </div>
                     </div>
                 </li>
@@ -47,51 +56,83 @@
                         </div>
                     </div>
                 </li>
-                <li onclick="send('json');" style="cursor: pointer;">
+                <li onclick="send('java');" style="cursor: pointer;">
                     <div style="width: 100%; border-bottom: 1px solid #dcdcdc" class="hover p-2 d-flex flex-column justify-content-center">
                         <div>
                             <p class="mb-0 small">PREVIEW</p>
-                            <p class="mb-0" style="font-size: 1.5em; font-weight: 500;">.json</p>
+                            <p class="mb-0" style="font-size: 1.5em; font-weight: 500;">.java</p>
                         </div>
                     </div>
                 </li>
-                <li onclick="send('json');" style="cursor: pointer;">
+                <li onclick="send('xml');" style="cursor: pointer;">
                     <div style="width: 100%; border-bottom: 1px solid #dcdcdc" class="hover p-2 d-flex flex-column justify-content-center">
                         <div>
                             <p class="mb-0 small">PREVIEW</p>
-                            <p class="mb-0" style="font-size: 1.5em; font-weight: 500;">.json</p>
+                            <p class="mb-0" style="font-size: 1.5em; font-weight: 500;">.xml</p>
                         </div>
                     </div>
                 </li>
-                <li onclick="send('json');" style="cursor: pointer;">
+                <li onclick="send('download/docx');" style="cursor: pointer;">
+                    <div style="width: 100%; border-bottom: 1px solid #dcdcdc" class="hover p-2 d-flex flex-column justify-content-center">
+                        <div>
+                            <p class="mb-0 small">DOWNLOAD</p>
+                            <p class="mb-0" style="font-size: 1.5em; font-weight: 500;">.docx</p>
+                        </div>
+                    </div>
+                </li>
+                <li onclick="send('css');" style="cursor: pointer;">
                     <div style="width: 100%; border-bottom: 1px solid #dcdcdc" class="hover p-2 d-flex flex-column justify-content-center">
                         <div>
                             <p class="mb-0 small">PREVIEW</p>
-                            <p class="mb-0" style="font-size: 1.5em; font-weight: 500;">.json</p>
+                            <p class="mb-0" style="font-size: 1.5em; font-weight: 500;">.css</p>
                         </div>
                     </div>
                 </li>
-                <li onclick="send('json');" style="cursor: pointer;">
+                <li onclick="send('js');" style="cursor: pointer;">
                     <div style="width: 100%; border-bottom: 1px solid #dcdcdc" class="hover p-2 d-flex flex-column justify-content-center">
                         <div>
                             <p class="mb-0 small">PREVIEW</p>
-                            <p class="mb-0" style="font-size: 1.5em; font-weight: 500;">.json</p>
+                            <p class="mb-0" style="font-size: 1.5em; font-weight: 500;">.js</p>
                         </div>
                     </div>
                 </li>
-                <li onclick="send('json');" style="cursor: pointer;">
+                <li onclick="send('download/txt');" style="cursor: pointer;">
                     <div style="width: 100%; border-bottom: 1px solid #dcdcdc" class="hover p-2 d-flex flex-column justify-content-center">
                         <div>
-                            <p class="mb-0 small">PREVIEW</p>
-                            <p class="mb-0" style="font-size: 1.5em; font-weight: 500;">.json</p>
+                            <p class="mb-0 small">DOWNLOAD</p>
+                            <p class="mb-0" style="font-size: 1.5em; font-weight: 500;">.txt</p>
                         </div>
                     </div>
                 </li>
-                <li onclick="send('json');" style="cursor: pointer;">
+                <li onclick="send('yaml');" style="cursor: pointer;">
                     <div style="width: 100%; border-bottom: 1px solid #dcdcdc" class="hover p-2 d-flex flex-column justify-content-center">
                         <div>
                             <p class="mb-0 small">PREVIEW</p>
                             <p class="mb-0" style="font-size: 1.5em; font-weight: 500;">.yaml</p>
+                        </div>
+                    </div>
+                </li>
+                <li onclick="send('download/rtf');" style="cursor: pointer;">
+                    <div style="width: 100%; border-bottom: 1px solid #dcdcdc" class="hover p-2 d-flex flex-column justify-content-center">
+                        <div>
+                            <p class="mb-0 small">DOWNLOAD</p>
+                            <p class="mb-0" style="font-size: 1.5em; font-weight: 500;">.rtf</p>
+                        </div>
+                    </div>
+                </li>
+                <li onclick="send('download/odt');" style="cursor: pointer;">
+                    <div style="width: 100%; border-bottom: 1px solid #dcdcdc" class="hover p-2 d-flex flex-column justify-content-center">
+                        <div>
+                            <p class="mb-0 small">DOWNLOAD</p>
+                            <p class="mb-0" style="font-size: 1.5em; font-weight: 500;">.odt</p>
+                        </div>
+                    </div>
+                </li>
+                <li onclick="send('md');" style="cursor: pointer;">
+                    <div style="width: 100%; border-bottom: 1px solid #dcdcdc" class="hover p-2 d-flex flex-column justify-content-center">
+                        <div>
+                            <p class="mb-0 small">PREVIEW</p>
+                            <p class="mb-0" style="font-size: 1.5em; font-weight: 500;">.md</p>
                         </div>
                     </div>
                 </li>
@@ -121,6 +162,24 @@
         function send(dest) {
             location.href = "/" + dest;
         }
+
+        function openNav() {
+            if (window.innerWidth > 600){
+                document.getElementById("sideNav").style.width = "50vw";
+                document.getElementById("sideOverlay").style.display = "block";
+                document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+                document.getElementById("sideOverlay").classList.add("closing");
+            } else {
+                document.getElementById("sideNav").style.width = "100%";
+            }
+            
+        }
+        function closeNav() {
+            document.getElementById("sideNav").style.width = "0px";
+            document.getElementById("sideOverlay").style.display = "none";
+            document.getElementById("sideOverlay").classList.remove("closing");
+        }
+        document.getElementById('sideOverlay').addEventListener('click', closeNav);
     </script>
 </body>
 </html>
