@@ -41,12 +41,17 @@
 
 ---
 
+Dummy:
+
 - PNG
 - MP3
 - MP4
+- Folder
+- ZIP
 
 ---
 
 - Favicon
 - Lorem Ipsum Generator
 - Picture in size customizeble
+- Twitter Header (Social Media)

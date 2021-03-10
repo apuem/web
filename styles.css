@@ -60,6 +60,9 @@ input[type=text] {
     border: 1px solid #DCDCDC;
     width: 50vw;
     height: 50vh;
+    background-color: #1e1e1e;
+    color: white;
+    border-radius: 10px;
   }
 
   .copyContainer:hover + .hide {
@@ -71,19 +74,19 @@ input[type=text] {
   }
 
   .jname {
-    color: blue;
+    color: #97d7fa;
   }
 
   .jvalue {
-    color: red;
+    color: #cf9176;
   }
 
   .jbvalue {
-    color: darkblue;
+    color: #4c8bc0;
   }
 
   .jivalue {
-    color: green;
+    color: #b0cba4;
   }
 
   .closing:hover {
