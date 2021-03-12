@@ -63,10 +63,15 @@ input[type=text] {
     background-color: #1e1e1e;
     color: white;
     border-radius: 10px;
+    overflow-y: scroll;
   }
 
   .copyContainer:hover + .hide {
     display: block;
+  }
+
+  pre {
+    color: #d2d2d2;
   }
 
   .hide {
@@ -87,6 +92,22 @@ input[type=text] {
 
   .jivalue {
     color: #b0cba4;
+  }
+
+  .darkchar {
+    color: #797979;
+  }
+
+  .hdarkblue {
+    color: #4e90c9;
+  }
+
+  .hlightblue {
+    color: #99dbff;
+  }
+
+  .horange {
+    color: #cb8e74;
   }
 
   .closing:hover {

@@ -30,7 +30,7 @@
         <h3 class="py-3 px-5">Find us on Twitter. <a href="https://twitter.com/apuemdev">@apuemdev</a></h3>
         <h3 class="py-3 px-5">See more on GitHub. <a href="https://github.com/apuem">github.com/apuem</a></h3>
     </div>
-    <div id="sideOverlay" style="height: 100%; width: 100vw; position: fixed; overflow-x: hidden; background-color: #111111; opacity: 50%; right: 0px; display: none;"> Test</div>
+    <div id="sideOverlay" style="height: 100%; width: 100vw; position: fixed; overflow-x: hidden; background-color: #111111; opacity: 50%; right: 0px; display: none;"></div>
     <div id="main" style="width: 100%;" class="d-flex flex-column justify-content-center align-items-center">
         <div style="padding-top: 10vh;" class=""><h1 style="font-size: 2em; font-weight: 500;">start a new document</h1></div>
         <div style="padding-bottom: 20vh;">
@@ -180,6 +180,12 @@
             document.getElementById("sideOverlay").classList.remove("closing");
         }
         document.getElementById('sideOverlay').addEventListener('click', closeNav);
+
+        const params = new URLSearchParams(window.location.search);
+        if (params.has("search") == true) {
+            search = params.get("search");
+            location.href = "/" + search;
+        }
     </script>
 </body>
 </html>
