@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - apuem</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- SEO -->
+    <meta name="description" content="With apuem you can quickly start a file, even if you can not remember the syntax of the file type. Open your HTML file now and copy it with one click or download a ready to go document. It is an empty example file that can be used as template to build something great fith it.">
+    <meta name="keywords" content="example, template, start, empty, launcher, document, file, html">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <a style="font-weight: 600; font-size: 1.25em; padding: 1.5vw 5vw; float: left; color: #111111 !important; text-decoration: none !important;" href="https://www.apuem.com">apuem</a>
+    <a style="font-weight: 400; font-size: 0.75em; padding: 2vw 7.5vw; float: right; color: #111111 !important; text-decoration: none !important; cursor: pointer;" onclick="openNav()">MORE</a>
+    <div id="sideNav" style="height: 100%; width: 0px; position: fixed; border: 0.5px solid #DCDCDC; z-index: 1; background-color: #F5F5F5; overflow-x: hidden; right: 0px;">
+        <a style="font-weight: 400; font-size: 0.75em; padding: 2vw 7.5vw; float: right; color: #111111 !important; text-decoration: none !important; cursor: pointer" onclick="closeNav()">CLOSE</a>
+        <h2 class="p-5">HTML is an open standard file format, and data interchange format, that uses human-readable text to store and transmit data objects consisting of attribute–value pairs and array data types. It is a very common data format, with a diverse range of applications, such as serving as a replacement for XML in AJAX systems. (Source: wikipedia)</h2>
+        <hr>
+        <p class="p-2 px-5" style="font-weight: 400; font-size: 1em;"><a style="color: #111111" href="https://github.com/apuem/html#about-html">MORE INFORMATION</a></p>
+        <p class="p-2 px-5" style="font-weight: 400; font-size: 1em;"><a style="color: #111111" href="https://github.com/apuem/html#how-to-open-html">HOW TO OPEN THIS FILE?</a></p>      
+    </div>
+    <div id="sideOverlay" style="height: 100%; width: 100vw; position: fixed; overflow-x: hidden; background-color: #111111; opacity: 50%; right: 0px; display: none;"></div>
+    <div id="main" style="width: 100%;" class="d-flex flex-column justify-content-center align-items-center">
+        <h1 class="m-5">.html</h1>
+        <div id="content" onmouseleave="resetCopyNote()" onclick="copyDivToClipboard()" class="show-container copyContainer p-3" style="overflow-y: scroll;">
+            <pre><span class="darkchar"><</span>&zwj;<span class="darkchar">!</span><span class="hdarkblue">DOCTYPE</span> <span class="hlightblue">html</span><span class="darkchar">></span><br><span class="darkchar"><</span>&zwj;<span class="hdarkblue">html</span> <span class="hlightblue">lang</span>=<span class="horange">"en"</span><span class="darkchar">></span><br><span class="darkchar"><</span>&zwj;<span class="hdarkblue">head</span><span class="darkchar">></span><br>    <span class="darkchar"><</span>&zwj;<span class="hdarkblue">meta</span> <span class="hlightblue">charset</span>=<span class="horange">"UTF-8"</span><span class="darkchar">></span><br>    <span class="darkchar"><</span>&zwj;<span class="hdarkblue">meta</span> <span class="hlightblue">http-equiv</span>=<span class="horange">"X-UA-Compatible" content="IE=edge"</span><span class="darkchar">></span><br>    <span class="darkchar"><</span>&zwj;<span class="hdarkblue">meta</span> <span class="hlightblue">name</span>=<span class="horange">"viewport"</span> <span class="hlightblue">content</span>=<span class="horange">"width=device-width, initial-scale=1.0"</span><span class="darkchar">></span><br>    <span class="darkchar"><</span>&zwj;<span class="hdarkblue">title</span><span class="darkchar">></span>Document<span class="darkchar"><</span><span class="darkchar">/</span><span class="hdarkblue">title</span><span class="darkchar">></span><br><span class="darkchar"><</span>&zwj;<span class="darkchar">/</span><span class="hdarkblue">head</span><span class="darkchar">></span><br><span class="darkchar"><</span>&zwj;<span class="hdarkblue">body</span><span class="darkchar">></span><br><br><span class="darkchar"><</span>&zwj;<span class="darkchar">/</span><span class="hdarkblue">body</span><span class="darkchar">></span><br><span class="darkchar"><</span>&zwj;<span class="darkchar">/</span><span class="hdarkblue">html</span><span class="darkchar">></span></pre>
+        </div>
+        <p id="copyNote" class="hide" style="font-weight: 400; font-size: 0.75em; padding: 2vw 7.5vw; float: right; color: #111111 !important; text-decoration: none !important;">CLICK TO COPY TO CLICKBOARD</p>
+    </div>
+    <script>
+        function openNav() {
+            if (window.innerWidth > 600){
+                document.getElementById("sideNav").style.width = "50vw";
+                document.getElementById("sideOverlay").style.display = "block";
+                document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+                document.getElementById("sideOverlay").classList.add("closing");
+            } else {
+                document.getElementById("sideNav").style.width = "100%";
+            }
+            
+        }
+        function closeNav() {
+            document.getElementById("sideNav").style.width = "0px";
+            document.getElementById("sideOverlay").style.display = "none";
+            document.getElementById("sideOverlay").classList.remove("closing");
+        }
+        document.getElementById('sideOverlay').addEventListener('click', closeNav);
+
+        function copyDivToClipboard() {
+            var range = document.createRange();
+            range.selectNode(document.getElementById("content"));
+            window.getSelection().removeAllRanges(); // clear current selection
+            window.getSelection().addRange(range); // to select text
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges();// to deselect
+            document.getElementById("copyNote").style.color = "green";
+            document.getElementById("copyNote").innerHTML = "COPIED!";
+                }
+        function resetCopyNote() {
+            document.getElementById("copyNote").style.color = "#111111";
+            document.getElementById("copyNote").innerHTML = "CLICK TO COPY TO CLICKBOARD";
+        }
+        </script>
+</body>
+</html>
