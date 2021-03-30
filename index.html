@@ -22,23 +22,24 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 </head>
-<body>
+<body id="main">
     <a style="font-weight: 600; font-size: 1.25em; padding: 1.5vw 5vw; float: left; color: #111111 !important; text-decoration: none !important;" href="https://www.apuem.com">apuem</a>
     <a style="font-weight: 400; font-size: 0.75em; padding: 2vw 7.5vw; float: right; color: #111111 !important; text-decoration: none !important; cursor: pointer;" onclick="openNav()">MORE</a>
     <div id="sideNav" style="height: 100%; width: 0px; position: fixed; border: 0.5px solid #DCDCDC; z-index: 1; background-color: #F5F5F5; overflow-x: hidden; right: 0px;">
         <a style="font-weight: 400; font-size: 0.75em; padding: 2vw 7.5vw; float: right; color: #111111 !important; text-decoration: none !important; cursor: pointer" onclick="closeNav()">CLOSE</a>
-        <h2 class="p-5">Search for your document and start it.</h2>
+        <h2 class="p-5 pb-2">Search for your document and start it.</h2>
+        <h2 class="p-5 pt-2">Or find another <a href="https://open.apuem.com">web app</a> that can help you.</h2>
         <hr>
         <h3 class="py-3 px-5">Email us. <a href="mailto:support@apuem.com">support@apuem.com</a></h3>
-        <h3 class="py-3 px-5">Find us on Twitter. <a href="https://twitter.com/apuemdev">@apuemdev</a></h3>
-        <h3 class="py-3 px-5">See more on GitHub. <a href="https://github.com/apuem">github.com/apuem</a></h3>
+        <h3 class="py-3 px-5">Find us on Twitter. <a target="blank_" href="https://twitter.com/apuemdev">@apuemdev</a></h3>
+        <h3 class="py-3 px-5">See more on GitHub. <a target="blank_" href="https://github.com/apuem">github.com/apuem</a></h3>
     </div>
     <div id="sideOverlay" style="height: 100%; width: 100vw; position: fixed; overflow-x: hidden; background-color: #111111; opacity: 50%; right: 0px; display: none;"></div>
     <div id="main" style="width: 100%;" class="d-flex flex-column justify-content-center align-items-center">
         <div style="padding-top: 10vh;" class=""><h1 style="font-size: 2em; font-weight: 500;">start a new document</h1></div>
         <div style="padding-bottom: 20vh;">
             <form autocomplete="off">
-                <input onkeyup="searching()" autocomplete="false" type="text" id="search-bar" name="search" placeholder="search (file extension)">
+                <input onkeyup="searching()" autocomplete="false" type="text" id="search-bar" name="search" placeholder="search (file extension)" autofocus>
             </form>
         </div>
         <div style="height: 40vh; width: 60vw; overflow-y: scroll;" class="list-border">
@@ -139,6 +140,14 @@
                         </div>
                     </div>
                 </li>
+                <li onclick="send('download/json');" style="cursor: pointer;">
+                    <div style="width: 100%; border-bottom: 1px solid #dcdcdc" class="hover p-2 d-flex flex-column justify-content-center">
+                        <div>
+                            <p class="mb-0 small">DOWNLOAD</p>
+                            <p class="mb-0" style="font-size: 1.5em; font-weight: 500;">.json</p>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
@@ -183,11 +192,19 @@
             document.getElementById("sideOverlay").classList.remove("closing");
         }
         document.getElementById('sideOverlay').addEventListener('click', closeNav);
+        document.getElementById('main').addEventListener('keydown', func1);
+
+        function func1() {
+        var keyCode = ('which' in event) ? event.which : event.keyCode;
+        if (keyCode == 16) {
+            openNav();
+        }
+        }
 
         const params = new URLSearchParams(window.location.search);
         if (params.has("search") == true) {
             search = params.get("search");
-            location.href = "/" + search;
+            location.href = "/download/" + search;
         }
     </script>
 </body>
