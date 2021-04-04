@@ -27,18 +27,12 @@
             <h2 class="p-5" style="text-align: center;">Your <span class="text-secondary">.rtf</span> file should download now. If not please click the link below to download it manually.</h2>
             <div>
                 <img src="../../images/download.svg" style="width: 1vw;" class="img-fluid" alt="download">
-                <a href="#" onclick="clickDownload()" download>example.txt</a>
+                <a href="https://apuem.com/files/rtf/example.rtf" download>example.rtf</a>
             </div>
         </div>
     </div>
     <script src="../../packages/downloadjs/download.js"></script>
     <script src="../../packages/downloadjs/download.min.js"></script>
-    <script>
-       download("../../files/rtf/example.rtf");
-
-       function clickDownload() {
-            download("../../files/rtf/example.rtf");
-       }
-    </script>
+    <script> document.location.href = 'https://apuem.com/files/rtf/example.rtf'; </script>
 </body>
 </html>

@@ -37,6 +37,12 @@ input[type=text] {
     width: 80vw !important;
     height: 7.5vh !important;
   }
+    .show-container {
+      width: 80vw !important;
+    }
+    .list-border {
+      width: 80vw !important;
+    }
   }
   
   input[type=text]:focus {
@@ -108,6 +114,14 @@ input[type=text] {
 
   .horange {
     color: #cb8e74;
+  }
+
+  .jyellow {
+    color: rgb(217,217,168);
+  }
+
+  .jgreen {
+    color: rgb(77,197,172);
   }
 
   .closing:hover {

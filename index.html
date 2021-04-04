@@ -192,9 +192,9 @@
             document.getElementById("sideOverlay").classList.remove("closing");
         }
         document.getElementById('sideOverlay').addEventListener('click', closeNav);
-        document.getElementById('main').addEventListener('keydown', func1);
+        document.getElementById('main').addEventListener('keydown', shiftToOpen);
 
-        function func1() {
+        function shiftToOpen() {
         var keyCode = ('which' in event) ? event.which : event.keyCode;
         if (keyCode == 16) {
             openNav();

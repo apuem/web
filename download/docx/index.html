@@ -18,6 +18,8 @@
     <link rel="mask-icon" href="../../images/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
+
+
 </head>
 <body>
     <a style="font-weight: 600; font-size: 1.25em; padding: 1.5vw 5vw; float: left; color: #111111 !important; text-decoration: none !important;" href="https://www.apuem.com">apuem</a>
@@ -27,18 +29,12 @@
             <h2 class="p-5" style="text-align: center;">Your <span class="text-secondary">.docx</span> file should download now. If not please click the link below to download it manually.</h2>
             <div>
                 <img src="../../images/download.svg" style="width: 1vw;" class="img-fluid" alt="download">
-                <a href="#" onclick="clickDownload()" download>example.docx</a>
+                <a href="https://apuem.com/files/docx/example.docx" download>example.docx</a>
             </div>
         </div>
     </div>
     <script src="../../packages/downloadjs/download.js"></script>
     <script src="../../packages/downloadjs/download.min.js"></script>
-    <script>
-       download("../../files/docx/example.docx");
-
-       function clickDownload() {
-            download("../../files/docx/example.docx");
-       }
-    </script>
+    <script> document.location.href = 'https://apuem.com/files/docx/example.docx'; </script>
 </body>
 </html>
