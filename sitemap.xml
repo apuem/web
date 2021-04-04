@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://apuem.com/</loc>
+  <lastmod>2021-04-04T09:02:58+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://apuem.com/json/</loc>
+  <lastmod>2021-04-04T09:02:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://apuem.com/html/</loc>
+  <lastmod>2021-04-04T09:02:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://apuem.com/java/</loc>
+  <lastmod>2021-04-04T09:02:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://apuem.com/xml/</loc>
+  <lastmod>2021-04-04T09:02:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://apuem.com/download/docx/</loc>
+  <lastmod>2021-04-04T09:02:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://apuem.com/css/</loc>
+  <lastmod>2021-04-04T09:02:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://apuem.com/js/</loc>
+  <lastmod>2021-04-04T09:02:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://apuem.com/download/txt/</loc>
+  <lastmod>2021-04-04T09:02:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://apuem.com/yaml/</loc>
+  <lastmod>2021-04-04T09:02:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://apuem.com/download/rtf/</loc>
+  <lastmod>2021-04-04T09:02:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://apuem.com/download/odt/</loc>
+  <lastmod>2021-04-04T09:02:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://apuem.com/md/</loc>
+  <lastmod>2021-04-04T09:02:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://apuem.com/download/json/</loc>
+  <lastmod>2021-04-04T09:02:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://apuem.com/files/docx/example.docx</loc>
+  <lastmod>2021-04-04T09:02:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://apuem.com/files/rtf/example.rtf</loc>
+  <lastmod>2021-04-04T09:02:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://apuem.com/files/odt/example.odt</loc>
+  <lastmod>2021-04-04T09:02:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
