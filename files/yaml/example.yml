@@ -1,0 +1,14 @@
+topic:
+  type:
+    - type: type1
+      name: name1
+      fields:
+        class: class1
+        property: -C
+    - type: type2
+      name: nam1
+      fields:
+        class: class2
+        property: -D
+
+#This is a comment

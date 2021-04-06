@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>apuem</title>
+    <title>Documents - apuem</title>
     <meta name="description" content="With apuem you can quickly start a file, even if you can not remember the syntax of the file type. Open your file now and copy it with one click or download a ready to go document. It is an empty example file that can be used as template to build something great with it.">
     <meta name="keywords" content="apuem, empty file, start file, download file, file template, file example, file syntax, document launcher">
     <meta name="author" content="apuem">
@@ -23,12 +23,13 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body id="main">
-    <a style="font-weight: 600; font-size: 1.25em; padding: 1.5vw 5vw; float: left; color: #111111 !important; text-decoration: none !important;" href="https://www.apuem.com">apuem</a>
+    <a style="font-weight: 600; font-size: 1.25em; padding: 1.5vw 5vw; float: left; color: #111111 !important; text-decoration: none !important;" href="https://www.apuem.com">a::documents</a>
     <a style="font-weight: 400; font-size: 0.75em; padding: 2vw 7.5vw; float: right; color: #111111 !important; text-decoration: none !important; cursor: pointer;" onclick="openNav()">MORE</a>
+    
     <div id="sideNav" style="height: 100%; width: 0px; position: fixed; border: 0.5px solid #DCDCDC; z-index: 1; background-color: #F5F5F5; overflow-x: hidden; right: 0px;">
         <a style="font-weight: 400; font-size: 0.75em; padding: 2vw 7.5vw; float: right; color: #111111 !important; text-decoration: none !important; cursor: pointer" onclick="closeNav()">CLOSE</a>
         <h2 class="p-5 pb-2">Search for your document and start it.</h2>
-        <h2 class="p-5 pt-2">Or find another <a href="https://open.apuem.com">web app</a> that can help you.</h2>
+        <h2 class="p-5 pt-2">Or find another <a href="https://collection.apuem.com">web app</a> that can help you.</h2>
         <hr>
         <h3 class="py-3 px-5">Email us. <a href="mailto:support@apuem.com">support@apuem.com</a></h3>
         <h3 class="py-3 px-5">Find us on Twitter. <a target="blank_" href="https://twitter.com/apuemdev">@apuemdev</a></h3>
@@ -36,7 +37,9 @@
     </div>
     <div id="sideOverlay" style="height: 100%; width: 100vw; position: fixed; overflow-x: hidden; background-color: #111111; opacity: 50%; right: 0px; display: none;"></div>
     <div id="main" style="width: 100%;" class="d-flex flex-column justify-content-center align-items-center">
-        <div style="padding-top: 10vh;" class=""><h1 style="font-size: 2em; font-weight: 500;">start a new document</h1></div>
+        <a href="https://www.producthunt.com/posts/documents-apuem?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-documents-apuem" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=290685&theme=light" alt="Documents - apuem - The Document Launcher. | Product Hunt" style="width: 162px; height: 35px;" width="162" height="35" /></a>
+        <div style="padding-top: 5vh;" class=""><h1 style="font-size: 2em; font-weight: 500;">start a new document</h1></div>
+        <!-- <div style="padding-top: 10vh;" class=""><h1 style="font-size: 2em; font-weight: 500;">start a new document</h1></div> Before ProductHunt Badge-->
         <div style="padding-bottom: 20vh;">
             <form autocomplete="off">
                 <input onkeyup="searching()" autocomplete="false" type="text" id="search-bar" name="search" placeholder="search (file extension)" autofocus>
@@ -129,7 +132,7 @@
                         <div style="width: 100%; border-bottom: 1px solid #dcdcdc" class="hover p-2 d-flex flex-column justify-content-center">
                             <div>
                                 <p class="mb-0 small">PREVIEW</p>
-                                <p class="mb-0" style="font-size: 1.5em; font-weight: 500;">.yaml</p>
+                                <p class="mb-0" style="font-size: 1.5em; font-weight: 500;">.yml</p>
                             </div>
                         </div>
                     </a>
@@ -165,7 +168,7 @@
                     </a>
                 </li>
                 <li style="cursor: pointer;">
-                    <a style="color: #111111 !important;" href="download/json/"></a>
+                    <a style="color: #111111 !important;" href="download/json/">
                         <div style="width: 100%; border-bottom: 1px solid #dcdcdc" class="hover p-2 d-flex flex-column justify-content-center">
                             <div>
                                 <p class="mb-0 small">DOWNLOAD</p>

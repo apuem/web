@@ -36,7 +36,18 @@
     <div id="main" style="width: 100%;" class="d-flex flex-column justify-content-center align-items-center">
         <h1 class="m-5">.js</h1>
         <div id="content" onmouseleave="resetCopyNote()" onclick="copyDivToClipboard()" class="show-container copyContainer p-3" style="overflow-y: scroll;">
-            <pre>{<br>  <span class="jname">"firstName"</span>: <span class="jvalue">"John"</span>,<br>  <span class="jname">"lastName"</span>: <span class="jvalue">"Smith"</span>,<br>  <span class="jname">"isAlive"</span>: <span class="jbvalue">true</span>,<br>  <span class="jname">"age"</span>: <span class="jivalue">27</span>,<br>  <span class="jname">"address"</span>: {<br>    <span class="jname">"streetAddress"</span>: <span class="jvalue">"21 2nd Street"</span>,<br>    <span class="jname">"city"</span>: <span class="jvalue">"New York"</span>,<br>    <span class="jname">"state"</span>: <span class="jvalue">"NY"</span>,<br>    <span class="jname">"postalCode"</span>: <span class="jvalue">"10021-3100"</span> },<br>  <span class="jname">"phoneNumbers"</span>: [<br>    {<br>      <span class="jname">"type"</span>: <span class="jvalue">"home"</span>,<br>      <span class="jname">"number"</span>: <span class="jvalue">"212 555-1234"</span><br>    },<br>    {<br>      <span class="jname">"type"</span>: <span class="jvalue">"office"</span>,<br>      <span class="jname">"number"</span>: <span class="jvalue">"646 555-4567"</span><br>    }<br>  ],<br>  <span class="jname">"children"</span>: [],<br>  <span class="jname">"spouse"</span>: <span class="jbvalue">null</span><br>}</pre>
+            <pre>
+var x = "Text";
+alert(x);
+
+function myFunction(f) {
+    return 7 + f;
+}
+
+document.getElementById("text").innerHTML = myFunction(63);
+
+//This is a comment
+            </pre>
         </div>
         <p id="copyNote" class="hide" style="font-weight: 400; font-size: 0.75em; padding: 2vw 7.5vw; float: right; color: #111111 !important; text-decoration: none !important;">CLICK TO COPY TO CLICKBOARD</p>
     </div>

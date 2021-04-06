@@ -116,12 +116,24 @@ input[type=text] {
     color: #cb8e74;
   }
 
+  .corange {
+    color: #d5b87c;
+  }
+
   .jyellow {
     color: rgb(217,217,168);
   }
 
   .jgreen {
     color: rgb(77,197,172);
+  }
+
+  .cpurple {
+    color: rgb(194,132,189);
+  }
+
+  .cdarkgreen {
+    color: rgb(106,153,85);
   }
 
   .closing:hover {
