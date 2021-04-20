@@ -111,7 +111,8 @@
         }
 
         function hideOpt() {
-          document.getElementById('webappList').style.display = "none";
+          setTimeout(function(){ document.getElementById('webappList').style.display = "none"; }, 10);
+          
         }
 
         document.getElementById('webappList').style.display = "none";
