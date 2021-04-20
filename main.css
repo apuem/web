@@ -1,0 +1,8 @@
+.list-group a {
+    text-decoration: none !important;
+}
+
+#webappList {
+    height: 30vh;
+    overflow: scroll;
+}
