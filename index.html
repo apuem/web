@@ -11,18 +11,82 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <!-- link CSS -->
     <link rel="stylesheet" href="main.css">
+    <!-- link Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
 </head>
 <body>
     <div class="position-absolute top-50 start-50 translate-middle">
-        <p class="ue-p1 user-select-none">apuem</p>
+        <p class="ue-p1 user-select-none poppins-font">apuem</p>
     </div>
     <div class="position-absolute bottom-0 start-50 translate-middle-x">
-        <p class="ue-p1 user-select-none" id="date">date</p>
+        <p class="ue-p1 user-select-none poppins-font" id="date">[date]</p>
+    </div>
+    <div class="offcanvas offcanvas-bottom" style="height: 60%; color: white;" tabindex="-1" id="offcanvasReport" aria-labelledby="offcanvasReportabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasReportLabel"><i class="bi bi-flag p-2"></i> Report Something</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small">
+            <p class="p-2">Please, tell us what you want to report.</p>
+            <div class="mb-3 p-2">
+                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="bodyInput" rows="3"></textarea>
+                <button type="button" class="btn btn-primary my-3" onclick="sendReport()">Send</button>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-bottom" style="height: 60%; color: white;" tabindex="-1" id="offcanvasSucess" aria-labelledby="offcanvasSucessLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasSucessLabel"><i class="bi bi-check-circle"></i> Sucess</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small">
+            <p class="p-2">Thank you, everything worked well. You can close this page now.</p>
+        </div>
     </div>
     <script>
         var d = new Date();
         var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
         document.getElementById("date").innerHTML = d.getDate() + ". " + months[d.getMonth()] + " " + d.getFullYear();
+        const params = new URLSearchParams(window.location.search);
+        if (params.has("id") == true) {
+            id = params.get("id");
+        }
+        switch(id) {
+        case "report":
+            var myOffcanvas = document.getElementById('offcanvasReport');
+            var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas).show();
+            break;
+        case "policy":
+            // code block
+            break;
+        case "imprint":
+            // code block
+            break;
+        case "add":
+            // code block
+            break;
+        case "sucess":
+            var myOffcanvas = document.getElementById('offcanvasSucess');
+            var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas).show();
+            break;
+        }
+
+        function sendReport() {
+            var body = document.getElementById("bodyInput").value;
+
+            Email.send({
+                SecureToken : "5722f866-9c58-447c-8c6b-4ecb3a855975",
+                To : 'jona.kaufmann@yahoo.com',
+                From : "support@apuem.com",
+                Subject : "[apuem] Report of something",
+                Body : "Issue: " + body + ";"
+            }).then(
+            );
+            window.location.href = "/?id=sucess";
+        }
+
     </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>

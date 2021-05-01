@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 body {
     background-color: black;
 }
 
-p {
+.poppins-font {
     font-family: Poppins;
 }
 
@@ -22,3 +20,39 @@ p {
     font-weight: 400;
     font-size: 1rem;
 }
+
+.btn-close {
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat !important;
+}
+
+.offcanvas {
+    background-color: rgb(24, 24, 24) !important;
+}
+
+.form-control {
+    background-color: rgb(24, 24, 24) !important;
+    border: 1px solid #ffffff !important;
+    color: #ffffff !important;
+}
+
+.form-control:focus {
+    background-color: rgb(24, 24, 24) !important;
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.245) !important;
+}
+
+.btn-primary {
+    color: black !important;
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+
+.btn-primary:active {
+    color: black !important;
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.245) !important;
+}
+
