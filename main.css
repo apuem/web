@@ -8,7 +8,11 @@ p {
 }
 
 a {
-    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    color: #ffffffe0;
 }
 
 @media screen and (max-width: 768px) {
@@ -18,6 +22,10 @@ a {
     #APUEM-logo {
         display: none;
     }
+}
+
+.menu-link {
+    text-decoration: none !important;
 }
 
 #text-container {
