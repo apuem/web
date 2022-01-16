@@ -40,20 +40,29 @@
     <div id="text-container" class="position-absolute top-0 start-0 text-uppercase">
         <a>
             <p>☾ API REQUEST</p>
-            <p>Please get back.</p>
+            <p>All bits and bytes fired.</p>
         </a>
     </div>
     <script>
-        fetch("https://apuemdb.up.railway.app/0/url", {
+        const QueryString = window.location.search; 
+        const urlParams = new URLSearchParams(QueryString); 
+
+        if (urlParams.has('id')) {
+            var name = urlParams.get('id');
+            console.log(urlParams.get('id'));
+            fetch("https://apuemdb.up.railway.app/ubn/" + name, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
-                "Access-Control-Allow-Origin": "*"
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Headers": "*"
             }}).then(function(response) {
                 return response.json();
             }).then(function(data) {
-                document.getElementById("text-container").innerHTML = "<a><p>☾ API REQUEST</p><p>" + data + "</p></a>";
+                console.log(data);
+                document.getElementById("text-container").innerHTML = "<a><p>☾ API REQUEST</p><p>All bits and bytes fired.</p><p>" + data + "</p></a>";
             });
+        }
     </script>
 </body>
 </html>
